@@ -1,0 +1,144 @@
+#headline-container {
+    color: #fff;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+}
+
+.hero-headline {
+    max-width: 700px;
+    width: 100%;
+    text-align: center;
+}
+
+.decode-logo {
+    max-width: 160px;
+    margin-bottom: 20px;
+}
+
+.decode-cover {
+    max-width: 100%;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.3);
+    margin-bottom: 30px;
+}
+
+.hero-subtitle {
+    font-size: 36px;
+    font-weight: 800;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.hero-subtext {
+    color: #cfcece;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: start;
+    padding: 0 10px;
+}
+
+.hero-subtext b,
+.hero-subtitle b {
+    color: #ff4d4d;
+    font-weight: 700;
+}
+
+.center-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-button {
+    background-color: #ff1a1a;
+    color: #fff;
+    border: none;
+    margin-top: 20px;
+    padding: 16px 32px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 0 12px 2px rgba(255, 0, 0, 0.6);
+    transition: all 0.3s ease;
+}
+
+.hero-button:hover {
+    background-color: #e60000;
+    box-shadow: 0 0 18px 3px rgba(255, 0, 0, 0.7);
+}
+
+@media (max-width: 600px) {
+    .hero-subtitle {
+        font-size: 26px;
+        font-weight: 800;
+        margin-bottom: 40px;
+    }
+
+    .hero-button {
+        font-size: 16px;
+        padding: 14px 24px;
+    }
+
+    .decode-logo {
+        max-width: 120px;
+    }
+
+    .decode-cover {
+        margin-bottom: 20px;
+    }
+}
+
+.bonus-container {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.bonus-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #ff4d4d;
+    font-weight: 600;
+    font-size: clamp(24px, 2vw, 30px);
+    gap: 12px;
+    transition: color 0.3s ease;
+}
+
+.bonus-link:hover {
+    color: #ff1a1a;
+}
+
+.bonus-cover {
+    max-width: 80%;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(255, 77, 77, 0.4);
+}
+
+.bonus-text {
+    margin-top: 20px;
+}
+
+.spinner-text {
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+}

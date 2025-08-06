@@ -1,0 +1,145 @@
+:root {
+    --bg-color: #290504;
+    --highlight-color: #e64b4d;
+    --text-color: #f5f5f5;
+    --accent-dark: #3a0a07;
+    --font-family: 'Helvetica Neue', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    padding-bottom: 80px;
+}
+
+header {
+    padding: 20px;
+    text-align: center;
+    background-color: var(--bg-color);
+}
+
+.logo {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+}
+
+section {
+    margin: 60px 20px;
+}
+
+section h2 {
+    padding-top: 30px;
+    margin-bottom: 20px;
+}
+
+section p {
+    margin-bottom: 18px;
+    line-height: 1.6;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    list-style: none;
+}
+
+/* Main container */
+.wrapper {
+    padding: 20px;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+/* Index menu */
+.index {
+    background-color: var(--accent-dark);
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+}
+
+.index ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.index a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+.index a:hover {
+    color: var(--highlight-color);
+}
+
+/* Chapter content */
+.content section {
+    margin-bottom: 60px;
+}
+
+.content h2 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    color: var(--highlight-color);
+}
+
+.content p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+.highlight,
+strong {
+    color: var(--highlight-color);
+}
+
+/* Responsive behavior */
+@media (min-width: 768px) {
+    .index ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .index li {
+        margin: 0 10px;
+    }
+
+    .content h2 {
+        font-size: 2rem;
+    }
+
+    .content p {
+        font-size: 1.15rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .wrapper {
+        padding: 40px;
+    }
+
+    .index {
+        padding: 30px;
+    }
+
+    .index a {
+        font-size: 1.2rem;
+    }
+}

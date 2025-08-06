@@ -1,0 +1,166 @@
+.offer-container {
+    background: rgba(255, 255, 255, 0.062);
+    background: rgb(48, 22, 22);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    padding: 40px 35px;
+    padding-bottom: 40px;
+    max-width: 580px;
+    text-align: center;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+}
+
+.price-header .price-anchor {
+    font-size: 26px;
+    color: #999;
+    margin-bottom: 6px;
+}
+
+.promotional-text {
+    font-size: 50px;
+    line-height: 1;
+    margin-bottom: 10px;
+}
+
+.price-old {
+    color: #df0f0f;
+    text-decoration: line-through;
+    font-weight: 500;
+}
+
+.price-current {
+    margin: -10px 0 0px 0;
+    font-size: 66px;
+    color: #e63946;
+    font-weight: 800;
+}
+
+.price-info {
+    padding: 5px;
+    color: white;
+    border-radius: 20px;
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+
+.timer-wrapper {
+    margin: 35px 0;
+}
+
+.timer-text {
+    font-size: 19px;
+    color: #ccc;
+    margin-bottom: 16px;
+    line-height: 1.4;
+    font-weight: 500;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    letter-spacing: 0.2px;
+    transition: all 0.3s ease;
+}
+
+.timer-text span {
+    color: #facc15;
+    font-weight: 600;
+}
+
+.emoji-rotate {
+    display: inline-block;
+    animation: spin 2s linear infinite;
+    transform-origin: center;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+.timer-box {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+}
+
+.unit {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.02));
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    padding: 16px 0;
+    margin-bottom: 10px;
+    border-radius: 18px;
+    font-size: 32px;
+    font-weight: bold;
+    color: #facc15;
+    width: 80px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(255, 255, 0, 0.07), inset 0 0 6px rgba(255, 255, 0, 0.1);
+    transition: transform 0.3s ease;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    /* espaço entre número e unidade */
+}
+
+.unit span {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.unit small {
+    font-size: 20px;
+    color: #bbb;
+    font-weight: 500;
+    margin-top: 0;
+    font-weight: bold;
+}
+
+
+.unit:hover {
+    transform: scale(1.07);
+}
+
+.btn-cta {
+    width: 100%;
+    background-color: #ff1a1a;
+    color: #fff;
+    border: none;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 0 12px 2px rgba(255, 0, 0, 0.6);
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.link {
+    text-decoration: white;
+    color: white;
+}
+
+.btn-cta:hover {
+    transform: scale(1.03);
+    box-shadow: 0 12px 35px rgba(31, 162, 255, 0.4);
+}
+
+.card-bank-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-bank-img {
+    width: 100%;
+    margin-left: 20px;
+}

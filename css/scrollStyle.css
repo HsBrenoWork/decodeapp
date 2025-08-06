@@ -1,0 +1,30 @@
+/* Scroll wrapper */
+.signal-scroll-wrapper {
+    overflow-x: auto;
+    padding-bottom: 10px;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Scrollbar track (fundo) */
+.signal-scroll-wrapper::-webkit-scrollbar {
+    height: 10px;
+}
+
+/* Scrollbar thumb (barra em si) */
+.signal-scroll-wrapper::-webkit-scrollbar-thumb {
+    background-color: #ff1a1a;
+    border-radius: 6px;
+}
+
+/* Scrollbar background */
+.signal-scroll-wrapper::-webkit-scrollbar-track {
+    background-color: #330000;
+    border-radius: 6px;
+}
+
+/* For Firefox */
+.signal-scroll-wrapper {
+    scrollbar-width: thin;
+    scrollbar-color: #ff1a1a #330000;
+}

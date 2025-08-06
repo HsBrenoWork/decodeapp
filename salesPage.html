@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Acesso Restrito — Decode</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/salesPage.css">
+  <link rel="stylesheet" href="/css/timerPricing.css">
+  <link rel="stylesheet" href="/css/finalCopy.css">
+  <link rel="stylesheet" href="/css/cardFlip.css">
+  <link rel="stylesheet" href="/css/boxDots.css">
+  <link rel="stylesheet" href="/css/vsl.css">
+  <link rel="stylesheet" href="/css/progressBar.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.40/moment-timezone-with-data.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/locale/pt-br.min.js"></script>
+
+    
+</head>
+<body>
+    <div class="container">
+      <!-- Logo -->
+      <img src="img/decodeLogo.png" alt="Decode Logo" class="logo" />
+  
+      <!-- Headline -->
+      <h1 class="headline">🚫 ACESSO NEGADO! 🚫</h1>
+
+      <div class="mainly-content" id="mobile-vsl">
+        <div class="media-player-container">
+            <div id="media-player">
+                <div class="video-container">
+                    <video id="video" poster="img/decodeCoverHorizontal.png"  disablepictureinpicture controlsList="nodownload noplaybackrate">
+                            <source src="vid/decodeVsl.mp4" type="video/mp4">
+                            Seu navegador não suporta este vídeo.
+                    </video>
+                    <div class="progress-sub-container">
+                        <div id="progress-container">
+                            <div id="progress-bar"></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="control">
+                    <img src="/img/playVideo.png" id="sly_playvideo01_event" class="play" width="100" data-animation="alternate"></img>
+                </div>
+            </div>
+            <!-- <button id="fullscreen" class="fullscreen">
+                    <i class="fa-solid fa-maximize fa-2x f-icon"></i>
+                </button> -->
+        </div>
+    </div>
+  
+      <!-- Subtexto principal -->
+      <!-- <p class="subtext">
+        O <strong>Decode</strong> é o único app online que analisa os
+        <strong>60 sinais ocultos femininos</strong> e revela o
+        <strong>nível real de desejo</strong> que ela sente por você — com total sigilo e precisão.
+      </p> -->
+  
+      <!-- Motivo do bloqueio -->
+      <h2 class="headline-two">SEU ACESSO ESTÁ<br> RESTRITO PORQUE:</h2>
+  
+      <div class="card-section">
+        <div class="card-container">
+          <div class="card">
+            <div class="card-side front"></div>
+            <div class="card-side back">
+              <h3 class="card-title">👑 Aplicativo <br> exclusivo</h3>
+              <p class="card-text">O único app que analisa sinais ocultos femininos e revela com precisão o que ela sente por você. Totalmente sigiloso, direto e certeiro.</p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="card-container">
+          <div class="card">
+            <div class="card-side front"></div>
+            <div class="card-side back">
+              <h3 class="card-title">⚜️ Não é pra <br> qualquer um</h3>
+              <p class="card-text">O Decode revela verdades que nem ela mesma admitiria. Se você não está pronto pra enxergar o que está por trás dos gestos não entre.</p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="card-container">
+          <div class="card">
+            <div class="card-side front"></div>
+            <div class="card-side back">
+              <h3 class="card-title">🔱 Atração <br> Magnética</h3>
+              <p class="card-text">Você atrai com atitude, não com palavras. O Decode mostra como despertar o interesse dela com gestos, postura e leitura precisa dos sinais.</p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="card-container">
+          <div class="card">
+            <div class="card-side front"></div>
+            <div class="card-side back">
+              <h3 class="card-title">🏆 Resultados <br> comprovados</h3>
+              <p class="card-text">86% dos usuários relatam mais segurança, assertividade e sucesso no relacionamento com ela. E isso sem forçar nada. Ela sente — e você conduz.</p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="card-container">
+          <div class="card">
+            <div class="card-side front"></div>
+            <div class="card-side back">
+              <h3 class="card-title">🔒 Sigilo absoluto</h3>
+              <p class="card-text">Nenhum dado exposto. Você consulta, analisa e descobre — em segundos — sem que ninguém saiba. Privacidade vitalícia.</p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="card-container">
+          <div class="card">
+            <div class="card-side front"></div>
+            <div class="card-side back">
+              <h3 class="card-title">🪙 Valor <br> inestimável</h3>
+              <p class="card-text">O conhecimento que o Decode entrega não tem preço. É a diferença entre insistir à toa… e agir com precisão quando ela já disse sim — sem palavras.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+      <!-- Cartões de destaque -->
+      <!-- <div class="card-section">
+        <div class="card">
+          <h3 class="card-title">⚜️ Não é pra qualquer um</h3>
+          <p class="card-text">O Decode revela verdades que nem ela mesma admitiria. Se você não está pronto pra enxergar o que está por trás dos gestos, não entre.</p>
+        </div>
+  
+        <div class="card">
+          <h3 class="card-title">🧠 Leitura Profunda</h3>
+          <p class="card-text">Você descobrirá o que ela sente por você antes mesmo dela perceber com base nos 60 sinais microcomportamentais</p>
+        </div>
+  
+        <div class="card">
+          <h3 class="card-title">🔒 Total sigilo</h3>
+          <p class="card-text">Seu nome não aparece. Sua consulta é 100% privada e vitalícia. Resultados em segundos.</p>
+        </div>
+  
+        <div class="card">
+          <h3 class="card-title">🎁 Bônus Exclusivo</h3>
+          <p class="card-text">Linguagem corporal avançada: descubra se ela mente, sente falta ou está testando você! E aprenda a ler isso como um livro aberto.</p>
+        </div>
+      </div> -->
+  
+      <!-- Mockup do produto -->
+      <img src="/img/decodeMockupBanner.png" alt="" class="decode-mockup" />
+  
+      <!-- Oferta principal -->
+      <div class="main-offer">
+        <div class="offer-container">
+            <h2 class="promotional-text">Libere <br>Acesso ao <br> <b>DECODE</b></h2>
+          <div class="price-header">
+            <p class="price-anchor">De <span class="price-old">R$27</span> por apenas</p>
+            <p class="price-current">💥 R$ 9</p>
+            <p class="price-info">
+              👑 Acesso imediato <br>
+              🔒 Sigilo absoluto <br>
+              🏆 Garantia de 7 dias
+            </p>
+            
+          </div>
+  
+          <!-- Timer -->
+          <div class="timer-wrapper">
+            <p class="timer-text">
+                <span class="emoji-rotate">⏳</span> Oferta válida até: <br>
+                <span id="data-expiracao">hoje</span> às 23:59 <br> Tempo restante:
+              </p>
+            <div class="timer-box">
+              <div class="unit"><span id="hours">00</span><small>h</small></div>
+              <div class="unit"><span id="minutes">00</span><small>m</small></div>
+              <div class="unit"><span id="seconds">00</span><small>s</small></div>
+            </div>
+          </div>
+  
+          <!-- CTA -->
+          <button class="btn-cta">
+            <a href="https://pay.cakto.com.br/3nuxft9_480208" class="link">🔐 LIBERAR MEU ACESSO</a>
+          </button>
+
+          <div class="card-bank-container">
+            <img src="/img/cardBankVector.png" alt="" class="card-bank-img">
+          </div>
+          
+        </div>
+      </div>
+
+      <h2 style="text-align: center; color: white; margin-top: 80px;">
+        SABIA QUE <b>67% DAS MULHERES PERDEM O INTERESSE</b> EM UM HOMEM QUANDO ELE NÃO PERCEBE <b>OS SINAIS QUE ELA ENVIA?</b>
+      </h2>
+  
+      <!-- Bloco de copy -->
+        <div class="copy-box">
+          <div class="box-card">
+            <p class="second-text">
+              Ela te dá sinais. <br> Mas você <b>não percebe.</b> <br> Porque ninguém nunca te ensinou a <b>ler o corpo de uma mulher.</b> Você aprendeu a elogiar… mas não a <b>interpretar o silêncio.</b>
+            </p>
+        </div>
+        <div class="dots">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+        <div class="box-card">
+            <p class="second-text">
+              Você confunde <b>simpatia com atração.</b> Insiste em conversas que só fluem porque <b>você força.</b> Cria esperança em atitudes vazias. Corre atrás de quem <b>nunca te quis de verdade.</b>
+            </p>
+        </div>
+        <div class="dots">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+        <div class="box-card">
+            <p class="second-text">
+              Enquanto você tenta impressionar…  o homem que entende os sinais conquista. <b>É no olhar.</b> Na forma como ele chega mais perto… e quando sai, <b>deixa ela querendo mais.</b>
+            </p>
+        </div>
+        <div class="dots">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+        
+        <div class="box-card">
+            <p class="second-text">
+              Ela pensa nele no banho. <br> Sente falta do cheiro. Do toque que quase foi. Tudo porque ele aprendeu a decifrar o que <u>99% dos homens ignoram:</u> <br> <b>OS SINAIS DELA!</b>
+            </p>
+        </div>
+        <div class="dots">
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+      </div>
+      <div class="box-card">
+          <p class="second-text">
+            <b>QUER SAIR DA ZONA DOS INVISÍVEIS?</b> O Decode foi criado justamente pra isso! Transformar o homem comum — no cara que ela <b>sente, respeita e deseja.</b>
+          </p>
+      </div>
+
+        <h2 style="text-align: center; color: white; margin-top: 60px;">O DECODE <b>REVELA <br> TUDO</b> O QUE ELA <br> TENTA<b> ESCONDER <br> ATÉ DELA MESMA</b></h2>
+
+          <div class="alert-list">
+            <p>🔥 Descubra quais dos 60 sinais microcomportamentais ela demonstra sem perceber</p>
+          </div>
+
+          <div class="alert-list">
+            <p>🔥 Descubra o nível exato de atração que ela sente por você</p>
+          </div>
+
+          <div class="alert-list">
+            <p>🔥 Entenda o que ela está tentando comunicar com o corpo, olhar e silêncio</p>
+          </div>
+
+          <div class="alert-list">
+            <p>🔥 Saiba o que fazer (e o que nunca fazer) com cada sinal — para que, da próxima vez, você use isso a seu favor e desperte ainda mais desejo nela.</p>
+          </div>
+  
+        <p class="info-box">
+            🎯 Hoje por Apenas <span style="color: #14c514;">R$9</span> <br> 
+            Condição especial exclusiva <br>
+            <b>↓ ACESSE AGORA MESMO ↓</b>
+        </p>
+  
+        <!-- <img src="img/decodeCoverHorizontal.png" alt="Decode Cover" class="decode-cover" /> -->
+      </div>
+
+      <button class="btn-cta">
+        <a href="https://pay.cakto.com.br/3nuxft9_480208" class="link">🔓 ACESSAR DECODE AGORA!</a>
+      </button>
+
+    </div>
+  
+    <!-- Timer Script -->
+    <script>
+      async function getTimezone() {
+        try {
+          const res = await fetch('https://ipapi.co/json/');
+          const data = await res.json();
+          return data.timezone;
+        } catch {
+          return moment.tz.guess();
+        }
+      }
+  
+      async function startCountdown() {
+        const timezone = await getTimezone();
+  
+        function update() {
+          const now = moment().tz(timezone);
+          const endOfDay = moment().tz(timezone).endOf('day');
+          const diff = moment.duration(endOfDay.diff(now));
+  
+          const hours = String(Math.floor(diff.asHours())).padStart(2, '0');
+          const minutes = String(diff.minutes()).padStart(2, '0');
+          const seconds = String(diff.seconds()).padStart(2, '0');
+          const hoje = now.format('D [de] MMMM').replace(/^./, m => m.toUpperCase());
+  
+          document.querySelectorAll('#hours').forEach(el => el.textContent = hours);
+          document.querySelectorAll('#minutes').forEach(el => el.textContent = minutes);
+          document.querySelectorAll('#seconds').forEach(el => el.textContent = seconds);
+          document.querySelectorAll('#data-expiracao').forEach(el => el.textContent = `Hoje ${hoje}`);
+        }
+  
+        update();
+        setInterval(update, 1000);
+      }
+  
+      startCountdown();
+    </script>
+
+    <script src="/js/cardFlip.js"></script>
+    <script src="/js/vsl.js"></script>
+    <script src="/js/progressBar.js"></script>
+  </body>
+  
+</html>

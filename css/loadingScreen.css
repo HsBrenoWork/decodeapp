@@ -1,0 +1,71 @@
+/* Fullscreen loading container */
+#loading-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(10, 0, 0, 0.9);
+    /* dark background with opacity */
+    display: flex;
+    flex-direction: column;
+    /* vertical layout */
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+/* Red glowing spinner animation */
+.spinner {
+    width: 60px;
+    height: 60px;
+    border: 6px solid rgba(255, 0, 0, 0.3);
+    border-top: 6px solid #ff1a1a;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.6);
+    margin-bottom: 20px;
+    /* spacing between spinner and text */
+}
+
+/* Spinner rotation animation */
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Loading message below the spinner */
+.spinner-text {
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    max-width: 90%;
+    line-height: 1.6;
+    font-weight: 400;
+    padding: 0 10px;
+}
+
+.spinner-text::before {
+    content: "⚠ ";
+    color: #ff4d4d;
+    font-weight: bold;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .spinner {
+        width: 40px;
+        height: 40px;
+        border-width: 4px;
+        margin-bottom: 16px;
+    }
+
+    .spinner-text {
+        font-size: 15px;
+    }
+}

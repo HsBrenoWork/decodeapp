@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Belanosima&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Belanosima&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+    scroll-behavior: smooth;
+    font-family: 'Inter', sans-serif;
+}
+
+html,
+body {
+    background-color: #290000;
+    overscroll-behavior: contain;
+}
+
+li {
+    list-style: none;
+}
+
+/* Remove blue highlight on tap (especially in mobile browsers) */
+button:focus,
+button:active,
+button::-moz-focus-inner {
+    outline: none;
+    box-shadow: none;
+    border: none;
+}
+
+/* For mobile tap highlight (WebKit browsers like Chrome/Safari) */
+button,
+.option-button,
+.hero-button {
+    -webkit-tap-highlight-color: transparent;
+}

@@ -1,0 +1,30 @@
+/* === PAGE WRAPPER === */
+#page-wrapper {
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+/* === DECODE PLUS WRAPPER === */
+.decode-plus-wrapper {
+    background-color: #1a0000;
+    padding: 60px 20px;
+    max-width: 980px;
+    margin: 0 auto;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+}
+
+.decode-plus-title {
+    text-align: start;
+    font-size: 28px;
+    margin-top: 100px;
+    margin-bottom: 30px;
+    color: #ff4d4d;
+    color: #fff
+}
+
+.decode-logo-result {
+    display: block;
+    margin: 0 auto 30px auto;
+    max-width: 120px;
+}
