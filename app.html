@@ -19,8 +19,8 @@
             f.parentNode.insertBefore(j, f);
         })(window, document, 'script', 'dataLayer', 'GTM-PV8DGWW7');
     </script>
-    <!-- End Google Tag Manager -->
 
+    <!-- End Google Tag Manager -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DECODE</title>
@@ -30,7 +30,9 @@
     <link rel="stylesheet" href="/css/quizScreen.css">
     <link rel="stylesheet" href="/css/resultScreen.css">
     <link rel="stylesheet" href="/css/scrollStyle.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
 </head>
 
 <body>
@@ -43,53 +45,66 @@
     <div id="headline-container" class="hero-section">
         <div class="hero-headline">
             <img src="img/decodeCoverHorizontal.png" alt="Decode Cover" class="decode-cover">
-
+    
             <h2 class="hero-subtitle">
-                Ela já deu todos os sinais<br>
-                <b>Você é que não soube ler!</b>
+                Ela está te enviando sinais. <br>
+                Você só não sabe <b>decifrar</b>.
             </h2>
-            
-            <!-- <p class="hero-subtext">
-                <i>O Decode analisa <b>60 sinais ocultos</b> que revelam o desejo real de uma mulher — <b>mesmo quando ela finge o contrário.</b></i>
-            </p> -->
-            
+    
             <p class="hero-subtext">
-                <i>Descubra se ela realmente te <b>deseja</b> ou se você é só um <b>passatempo emocional</b> na vida dela.</i>
-            </p>            
-
+                O Decode analisa <b>60 microcomportamentos</b> que revelam o interesse real de uma mulher — <br>
+                mesmo quando ela não diz nada com palavras.
+                <br><br>
+                Descubra se ela sente desejo... ou só está te usando como passatempo emocional.
+            </p>
+    
             <div class="center-btn">
-                <button class="hero-button start-sales-page">
+                <button class="hero-button start-quiz">
                     Começar Análise Secreta
                 </button>
             </div>
+
+            <!-- Bonus link container -->
+            <div class="bonus-container">
+                <a href="https://identidademagnetica.com.br/ebook.html" rel="noopener noreferrer" class="bonus-link">
+                    <img src="img/ebookCoverImg.png" alt="Capa do Bônus Olhar, Queixo, Boca" class="bonus-cover">
+                    <span class="bonus-text">Bônus: Olhar, Queixo, Boca</span>
+                </a>
+            </div>
         </div>
     </div>
-
+    
+  
     <div id="quiz-container" style="display: none;">
         <div id="question-container">
           <img src="/img/decodeLogo.png" alt="Decode Logo" class="decode-logo-quiz">
+      
           <p id="question-text"></p>
           <div class="buttons-container"></div>
+      
           <div class="quiz-btn-container">
             <button id="back-button">Anterior</button>
             <button id="next-button">Próximo</button>
           </div>
         </div>
     </div>
-
-    <!-- Results Section -->
-    <div id="result-wrapper">
-        <div id="result-container" style="display: none;">
-            <img src="img/decodeLogo.png" alt="Decode Logo" class="decode-logo-result">
-        </div>
-    </div>
+      
+  
+  <!-- Results Section -->
+  <div id="result-wrapper">
+    <div id="result-container" style="display: none;">
+        <img src="img/decodeLogo.png" alt="Decode Logo" class="decode-logo-result">
+      </div>
+  </div>
+      
 
     <div id="loading-container" style="display: none;">
         <div class="spinner"></div>
-        <h2 class="spinner-text">
+        <p class="spinner-text">
             Atenção: Em todas as perguntas você pode selecionar mais de uma opção!
-        </h2>
+        </p>
     </div>
+
 
     <script src="/js/quiz.js"></script>
 </body>
