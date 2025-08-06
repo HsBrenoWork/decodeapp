@@ -1,0 +1,116 @@
+#floating-manual-input {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 540px;
+    padding: 0 16px;
+    z-index: 9999;
+    box-sizing: border-box;
+    will-change: bottom;
+}
+
+/* ------------- popup -------------------- */
+
+/* .popup-hint {
+    background-color: #4CAF50;
+    background: #1c3152;
+    color: white;
+    padding: 10px 14px;
+    border-radius: 20px;
+    font-size: 14px;
+    max-width: 200px;
+    margin: 10px auto;
+    text-align: center;
+    animation: bounce 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+} */
+
+@keyframes bounce {
+    0% {
+        transform: scale(0.95);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+/* ------------ input ---------------- */
+
+.input-block {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    padding: 5px 10px;
+}
+
+.input-block textarea {
+    flex: 1;
+    width: 100%;
+    min-height: 38px;
+    max-height: 120px;
+    padding: 8px 14px;
+    font-size: 16px;
+    line-height: 1.4;
+    font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+
+    border: none;
+    border-radius: 25px;
+    background-color: transparent;
+    outline: none;
+    resize: none;
+
+    overflow-y: auto;
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* IE/Edge */
+    height: 38px;
+    transition: height 0.2s ease;
+}
+
+/* Chrome, Safari e Edge (webkit) */
+.input-block textarea::-webkit-scrollbar {
+    display: none;
+}
+
+
+.input-block button {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    border: none;
+    background-color: #25d366;
+    color: white;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.input-block button:hover {
+    background-color: #128c7e;
+}
+
+/* .chat-message.user-message {
+    align-self: flex-end;
+    background-color: #dcf8c6;
+    border-radius: 15px 15px 0 15px;
+    padding: 10px 14px;
+    margin-bottom: 10px;
+    max-width: 80%;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    line-height: 1.4;
+    color: #222;
+} */

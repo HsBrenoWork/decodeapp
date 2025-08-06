@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-PV8DGWW7');
+    </script>
+
+    <!-- End Google Tag Manager -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carol Monteiro</title>
+    <link rel="stylesheet" href="/upsell/css/style.css">
+    <link rel="stylesheet" href="/upsell/css/csl.css">
+    <link rel="stylesheet" href="/upsell/css/newBtn.css">
+    <link rel="stylesheet" href="/upsell/css/headline.css">
+    <link rel="stylesheet" href="/upsell/css/typingAnimation.css">
+    <link rel="stylesheet" href="/upsell/css/jumpingDots.css">
+    <link rel="stylesheet" href="/upsell/css/inputPopup.css">
+    <link rel="stylesheet" href="/upsell/css/popupObjections.css">
+    <link rel="stylesheet" href="/upsell/css/audioMessage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+     <!-- WaveSurfer.js -->
+     <script src="https://unpkg.com/wavesurfer.js@7"></script>
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe
+                src="https://www.googletagmanager.com/ns.html?id=GTM-PV8DGWW7"
+                height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <div id="chat-container-section">
+        <div class="chat-container" id="chat-container">
+            <div class="chat-header">
+                <button class="back-button">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </button>
+                <img src="/upsell/img/botImg.png" class="bot-avatar" alt="Carol Monteiro">
+                <div class="bot-info">
+                    <div class="bot-name">Carol</div>
+                    <div class="bot-status" id="bot-status">Online</div>
+                </div>
+            </div>
+            <!-- Chat messages section -->
+            <div class="chat-messages" id="chat-messages">
+
+                <!-- New input component -->
+                    <!-- <div class="manual-input" data-step="1" data-placeholder="Digite apenas seu primeiro nome" data-popup="Qual seu primeiro nome?" data-input-id="user-name" data-next="message4">
+                    </div> -->
+
+                    <!-- [[delay:1000]] -->
+
+                <!-- Introduction -->
+                <div id="message1" class="bot-message hidden">
+                    <p data-typing="true"  data-typing-duration="2" style="display: none;">
+                        Oi lindinho.[[delay:1000]] Sou a Carol 💋
+                    </p>
+
+                    <p data-delay="0" data-typing="false" style="display: none;">
+                        Seu acesso ao DECODE já foi enviado por e-mail <br>
+                        Mas antes que vá...[[delay:1000]] quero te fazer uma perguntinha rápida:
+                    </p>
+                    <p data-delay="0" data-typing="false" style="display: none;">
+                        👉 Você sabe o que mais afasta uma mulher mesmo quando ela ainda gosta de você?
+                    </p>
+
+                    <!-- Button: Delay matches the flow after the previous message -->
+                    <button 
+                    data-delay="0" 
+                    id="sly_m2_event" 
+                    class="csl-btn" 
+                    onclick="showNext('message2', 'Não sei, mas quero saber')">
+                    Não sei, mas quero saber
+                    </button>
+
+                    <button 
+                    data-delay="0" 
+                    id="sly_m2_event" 
+                    class="csl-btn" 
+                    onclick="showNext('message2', 'Talvez... mas prefiro ouvir de você')">
+                    Talvez... mas prefiro ouvir de você
+                    </button>
+                </div>
+
+                <!-- <span id=""></span> -->
+                <!-- [[delay:1000]] -->
+
+                <div id="message2" class="chat-message bot-message hidden">
+                    <p data-typing="true" data-delay="2"  data-typing-duration="2" style="display: none;">
+                        Então grave isso na mente:[[delay:1000]] <br><br>
+                        Uma mulher começa a se afastar quando o homem se desconecta da própria essência!
+                    </p>
+
+                    <!-- Button: Delay matches the flow after the previous message -->
+                    <button 
+                    data-delay="1" 
+                    id="sly_m2_event" 
+                    class="csl-btn csl-btn-animation" 
+                    onclick="showNext('message3', 'Como assim Carol? 🤔')">
+                    Como assim Carol? 🤔
+                    </button>
+                </div>
+
+                <div id="message3" class="chat-message bot-message hidden">
+                    <p data-typing="true" data-delay="2"  data-typing-duration="2" style="display: none;">
+                        A psicologia revela que existem 16 tipos de personalidade,[[delay:1000]] e cada pessoa carrega um deles, mesmo sem saber.
+                    </p>
+
+                    <p data-delay="0" data-typing="false" style="display: none;">
+                        Esse tipo de personalidade é a sua verdadeira essência[[delay:1000]] e se você souber usar…[[delay:1000]]<br><br>
+                        <u><i>Pode fazer qualquer mulher te notar, te desejar e lembrar de você.</i></u>
+                        [[delay:1000]]
+                        <br><br>
+                        Mesmo sem ter status. Sem corpo sarado. Sem precisar provar nada.
+                    </p>
+
+                    <!-- Button: Delay matches the flow after the previous message -->
+                    <button 
+                    data-delay="1" 
+                    id="sly_m2_event" 
+                    class="csl-btn" 
+                    onclick="showNext('message4', 'Sério isso Carol?')">
+                    Sério isso Carol?
+                    </button>
+
+                    <button 
+                    data-delay="1" 
+                    id="sly_m2_event" 
+                    class="csl-btn" 
+                    onclick="showNext('message4', 'Personalidade é o segredo?')">
+                    Personalidade é o segredo?
+                    </button>
+                </div>
+
+                <div id="message4" class="chat-message bot-message hidden">
+                    <p data-typing="true" data-delay="2"  data-typing-duration="2" style="display: none;">
+                        Exatamente!
+                    </p>
+
+                    <audio preload="auto" data-delay="2" data-typing="false" data-typing-duration="3" data-src="/upsell/audios/audio02.mp3" class="bot-audio-message"></audio>
+
+                    <audio preload="auto" data-delay="2" data-typing="false" data-typing-duration="3" data-src="/upsell/audios/audio03.mp3" class="bot-audio-message"></audio>
+
+                    <!-- Button: Delay matches the flow after the previous message -->
+                    <button 
+                    data-delay="2" 
+                    id="sly_m2_event" 
+                    class="csl-btn csl-btn-animation" 
+                    onclick="showNext('message5', 'E qual o MEU então???')">
+                    E qual o MEU então???
+                    </button>
+                </div>
+
+                <div id="message5" class="chat-message bot-message hidden">
+                    <p data-typing="true" data-delay="2"  data-typing-duration="2" style="display: none;">
+                        Eu vou te mostrar qual é o seu tipo magnético.[[delay:1000]] O seu superpoder real.[[delay:1000]] Sua fraqueza oculta.[[delay:1000]]
+E como usar isso pra atrair sem forçar, sem fingir, sem correr atrás.
+                    </p>
+
+                    <p data-delay="0" data-typing="false" style="display: none;">
+                        Esse é o jogo que eu quero te ensinar a jogar.[[delay:1000]]
+Com as cartas certas.[[delay:1000]] E com o tipo de poder que só você tem.[[delay:1000]]
+                    </p>
+
+                    <audio preload="auto" data-delay="2" data-typing="false" data-typing-duration="3" data-src="/upsell/audios/audio04.mp3" class="bot-audio-message"></audio>
+
+                    <!-- Button: Delay matches the flow after the previous message -->
+                    <button 
+                    data-delay="2" 
+                    id="sly_m2_event" 
+                    class="csl-btn csl-btn-animation" 
+                    onclick="showNext('message6', 'Descobrir meu tipo AGORA!!')">
+                    Descobrir meu tipo AGORA!!
+                    </button>
+                </div>
+
+                <div id="message6" class="chat-message bot-message hidden">
+                    <audio preload="auto" data-delay="2" data-typing="false" data-typing-duration="3" data-src="/upsell/audios/audio07.mp3" class="bot-audio-message"></audio>
+
+                    <p data-delay="0" data-typing="false" style="display: none;">
+                        Mas ó...[[delay:1000]] Só funciona se você for 100% honesto.[[delay:1000]] Se tentar parecer o que não é...[[delay:1000]] vai receber o tipo errado.[[delay:1000]] E aí, não adianta nada.
+                    </p>
+                    <p data-delay="0" data-typing="false" style="display: none;">
+                        Posso te contar só mais um detalhe antes?
+                    </p>
+
+                    <!-- Button: Delay matches the flow after the previous message -->
+                    <button 
+                    data-delay="1" 
+                    id="sly_m2_event" 
+                    class="csl-btn csl-btn-animation" 
+                    onclick="showNext('message7', 'Sim, já tô aqui mesmo 😅')">
+                    Sim, já tô aqui mesmo 😅
+                    </button>
+                </div>
+
+                <div id="message7" class="chat-message bot-message hidden">
+                    <audio preload="auto" data-delay="2" data-typing="false" data-typing-duration="3" data-src="/upsell/audios/audio05.mp3" class="bot-audio-message"></audio>
+
+                    <audio preload="auto" data-delay="2" data-typing="false" data-typing-duration="3" data-src="/upsell/audios/audio06.mp3" class="bot-audio-message"></audio>
+
+                    <p data-delay="0" data-typing="false" style="display: none;">
+                        <b>✅ Agora: R$47 só agora</b>[[delay:1000]] <br>
+                        <b>❌ Depois: R$94 fixo</b>[[delay:1000]] <br>
+                        <b>💳 Pode dividir em até 8x de R$7,03</b>[[delay:1000]] <br>
+                        <b>💰 Ou pagar no PIX à vista</b>[[delay:1000]] <br>
+                        <b>🛡️ Garantia de 7 dias sem perguntas, sem burocracia se não for pra vc</b>
+                    </p>
+                    <p data-delay="0" data-typing="false" style="display: none;">
+                        Vai aproveitar enquanto ainda tá metade do preço?
+                    </p>
+
+                    <!-- Button: Delay matches the flow after the previous message -->
+                    <button 
+                    data-delay="1" 
+                    id="sly_m2_event" 
+                    class="csl-btn csl-btn-animation" 
+                    onclick="showNext('message8', 'Sim! Quero aproveitar antes que aumente 🔥')">
+                    Sim! Quero aproveitar antes que aumente 🔥
+                    </button>
+                </div>
+
+                <div id="message8" class="chat-message bot-message hidden">
+                    <p data-typing="true" data-delay="2"  data-typing-duration="2" style="display: none;">
+                        Então você vai receber pela metade do preço:[[delay:1000]] <br><br>
+
+                        <b>🔥 Seu tipo magnético entre os 16 existentes</b>[[delay:1000]] <br>
+                        <b>🔥 Seu superpoder de atração invisível</b>[[delay:1000]] <br>
+                        <b>🔥 O que te impede de gerar desejo (e como ajustar)</b>[[delay:1000]] <br>
+                        <b>🔥 Como usar a sua essência real pra conquistar — sem precisar copiar ninguém</b>[[delay:1000]] <br> 
+                        <b>🔥 E uma garantia de 7 dias depois da compra</b>
+                    </p>
+
+                    <p data-delay="0" data-typing="false" style="display: none;">
+                        Você pode continuar se moldando aos outros sem resultado...[[delay:1000]] Ou pode deixar eu te mostrar o mapa completo do seu próprio tipo magnético.
+                    </p>
+                    
+                    <p data-delay="0" data-typing="false" style="display: none;">
+                        <i><u>→ Libere seu acesso AGORA que estarei do outro lado te esperando pra te revelar → O que nenhuma mulher JAMAIS DIRIA PRA VC 🤫</u></i>
+
+                        [cta-btn]
+                    </p>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="button-container hidden" id="buttons-container">
+            <!-- Buttons will be dynamically inserted here -->
+        </div>
+
+        <div id="dynamic-btn-container"></div>
+
+        <div id="objection-popup" class="objection-popup hidden">
+            <div class="popup-inner">
+              <h3 class="popup-title">OUTROS CARAS SE <br> PERGUNTAM ISSO 👇</h3>
+              <div class="popup-options" id="objection-options">
+              </div>
+              <button class="close-popup" onclick="hideObjectionPopup()">Fechar</button>
+            </div>
+        </div>
+          
+    </div>
+
+    <div id="floating-manual-input" class="hidden"></div>
+
+    <div id="loading-container">
+        <div class="spinner"></div>
+    </div>
+
+    <script src="/upsell/js/csl.js"></script>
+
+</body>
+
+</html>

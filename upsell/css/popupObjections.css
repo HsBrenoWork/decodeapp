@@ -1,0 +1,133 @@
+/* === Objection Popup (Decode Style) === */
+.objection-popup {
+    position: fixed;
+    top: 90px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 540px;
+    background: linear-gradient(360deg, #4b0303, #3d0000);
+    background: #854141;
+    /* deep red */
+    border-radius: 15px;
+    /* box-shadow:
+        0 0 10px rgba(255, 0, 0, 0.25),
+        0 4px 20px rgba(255, 0, 0, 0.15); */
+    border: 3px solid rgb(126, 6, 6);
+    z-index: 10000;
+    padding: 24px;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    color: #fff;
+    font-family: 'Jost', sans-serif;
+}
+
+/* === Hidden state === */
+.objection-popup.hidden {
+    display: none;
+}
+
+/* === Title / Header inside popup === */
+.popup-inner h3 {
+    margin: 0 0 30px 0;
+    font-size: 1.2rem;
+    color: #fff;
+    text-align: center;
+    font-weight: 600;
+}
+
+/* === Options container === */
+.popup-options {
+    overflow-y: auto;
+}
+
+/* === Buttons inside popup === */
+.popup-options button {
+    display: block;
+    width: 100%;
+    background-color: #e70c0c;
+    border: none;
+    color: white;
+    padding: 14px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: start;
+    box-shadow: 0 0 6px rgba(255, 0, 0, 0.2);
+    transition: background-color 0.2s ease;
+}
+
+.popup-options button:hover {
+    background-color: #cc0000;
+}
+
+/* === Used buttons (disabled state) === */
+.popup-options button.used {
+    background-color: #444 !important;
+    animation: none;
+    pointer-events: none;
+    color: #aaa;
+}
+
+/* === Close button === */
+.close-popup {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    font-size: 13px;
+    margin-top: 12px;
+    padding: 10px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.close-popup:hover {
+    background-color: #cc0000;
+}
+
+/* === Dynamic button container (bottom floating options) === */
+#dynamic-btn-container {
+    padding: 10px;
+    bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    height: auto;
+    overflow: hidden;
+}
+
+/* === Buttons inside dynamic container === */
+#dynamic-btn-container button {
+    display: inline-block;
+    opacity: 1;
+    font-size: 16px;
+    font-weight: bold;
+    animation: pulse-border 1.8s infinite;
+    color: #fff;
+    background-color: #ff1a1a;
+    border: none;
+    border-radius: 12px;
+    padding: 10px 18px;
+    box-shadow: 0 0 8px rgba(255, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+/* === Pulse animation for buttons === */
+@keyframes pulse-border {
+    0% {
+        box-shadow: 0 0 0 0 rgba(248, 0, 0, 0.616);
+    }
+
+    50% {
+        box-shadow: 0 0 0 10px rgba(255, 0, 0, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(255, 0, 0, 0);
+    }
+}

@@ -1,0 +1,309 @@
+/* Common styles */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    /* background-color: #1a293a; */
+    overflow-x: hidden;
+    /* Prevent horizontal scrolling */
+}
+
+#chat-container-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    /* Add background to indicate overlay */
+    z-index: 777;
+    /* Ensure it is on top of other elements */
+}
+
+.chat-container {
+    width: 100%;
+    max-width: 600px;
+    /* padding-top: 20px; */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+    /* background: linear-gradient(90deg, #1a293a, #064681); */
+    background-color: #290000;
+}
+
+
+/* Mobile view */
+
+@media (max-width: 767px) {
+    body {
+        /* background: linear-gradient(90deg, #1a293a, #064681); */
+        background-color: white;
+    }
+
+    .chat-container {
+        height: 100vh;
+        /* Fill the entire screen */
+        border-radius: 0;
+    }
+}
+
+
+/* Desktop view */
+
+@media (min-width: 768px) {
+    #chat-container-section {
+        /* background: linear-gradient(90deg, #1a293a, #064681); */
+        background-color: #aaaaaa;
+        background: #1d1d1d;
+    }
+
+    .chat-container {
+        max-width: 600px;
+        margin: 0 auto;
+        /* Center the chat container */
+        padding: 0px;
+        border-radius: 5px;
+        box-shadow: inset 0px 1px 2px 0px rgb(116, 116, 116), 0 6px 8px rgba(0, 0, 0, 0.45);
+        border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
+        background: #e4e4e4;
+        background-color: #290000;
+    }
+}
+
+
+/* Chat messages container */
+
+.chat-messages {
+    flex: 1;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 260px;
+    margin-bottom: 120px;
+    /* Add margin to ensure space for buttons and input */
+}
+
+.chat-messages::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari, and Opera */
+}
+
+
+/* Chat message */
+
+
+/* Additional styles for chat messages to ensure proper alignment */
+
+.chat-message {
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 80%;
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+.bot-message {
+    display: flex;
+    justify-content: center;
+    max-width: 80%;
+    margin-bottom: 10px;
+    line-height: 1.4;
+    border-bottom-left-radius: 0;
+    transition: padding 0.5s ease;
+
+    align-self: flex-start;
+    background-color: #680808;
+    /* slightly brighter dark red for contrast */
+    color: #fff;
+    border-radius: 15px;
+    border-bottom-left-radius: 0;
+    transition: all 0.3s ease;
+}
+
+.bot-message img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+    opacity: 0;
+    /* Começa invisível */
+    transform: scale(0.95);
+    /* Pequeno efeito de zoom inicial */
+    transition: opacity 0.5s ease, transform 0.5s ease, padding 0.5s ease-in-out;
+    /* Transição suave */
+}
+
+.bot-message img.visible {
+    opacity: 1;
+    /* Aparece gradualmente */
+    transform: scale(1);
+    /* Retorna ao tamanho normal */
+}
+
+
+/* p::before,
+p::after {
+    content: '';
+    display: inline-block;
+    width: 10px;
+} */
+
+.user-message {
+    background-color: #ff4d4d;
+    align-self: flex-end;
+    margin: 10px 0 20px 0;
+    border-radius: 15px;
+    border-bottom-right-radius: 0;
+    box-shadow: 0 2px 8px rgba(255, 0, 0, 0.15);
+    color: #fff;
+}
+
+.first-btn {
+    margin-bottom: 20px;
+}
+
+
+/* button:hover {
+    background-color: #128c7e;
+} */
+
+.hidden {
+    display: none;
+}
+
+
+/* Input container */
+
+#name-input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 540px;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+/* Buttons container */
+
+#buttons-container,
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    bottom: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 540px;
+    z-index: 99;
+}
+
+.csl-btn {
+    display: none;
+    width: 80%;
+    padding: 15px;
+    background-color: #fc2d2d;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    white-space: normal;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.csl-btn-animation {
+    animation: pulse-animationThree 1.4s infinite;
+}
+
+@keyframes pulse-animation {
+    0% {
+        box-shadow: 0 0 0 1px #44944a;
+    }
+
+    100% {
+        box-shadow: 0 0 0 8px #e74c3c00;
+        box-shadow: 0 0 0 8px #86b34800;
+        /* box-shadow: 0 0 0 15px #86b348; */
+    }
+}
+
+@keyframes pulse-animationThree {
+    0% {
+        transform: scale(0.90);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0.90);
+    }
+}
+
+.cta-button {
+    margin-left: 5px;
+    margin-top: 30px;
+    background-color: #fc2d2d;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 15px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    animation: pulse-animationThree 1.4s infinite;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cta-text {
+    font-size: 16px;
+    font-style: italic;
+    transform: scale(1);
+    display: inline-block;
+    will-change: transform;
+}
+
+.cta-button:hover {
+    background-color: #b91d1d;
+}
+
+@keyframes pulse-animationThree {
+    0% {
+        transform: scale(0.9);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0.9);
+    }
+}
