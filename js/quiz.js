@@ -1,234 +1,234 @@
 // Array de perguntas (com apenas duas como exemplo)
 const questions = [{
-        question: "(1/25) Quando você está conversando com ela, como ela costuma se comportar fisicamente?",
-        options: [
-            { text: "Ela inclina o corpo em sua direção durante a conversa.", value: 3, signals: [1] },
-            { text: "Ela ajusta a postura para parecer mais confiante quando você chega.", value: 2, signals: [4] },
-            { text: "Ela toca casualmente em você enquanto fala.", value: 3, signals: [3] },
-            { text: "Nunca percebi esses comportamentos.", value: 0, signals: [] }
-        ]
-    },
-    {
-        question: "(2/25) Quando vocês estão próximos, o que você nota na linguagem corporal dela?",
-        options: [
-            { text: "Ela se aproxima e se posiciona perto de você.", value: 3, signals: [2] },
-            { text: "Ela mantém os pés apontados na sua direção.", value: 1, signals: [5] },
-            { text: "Ela imita sutilmente seus movimentos.", value: 2, signals: [8] },
-            { text: "Nunca percebi esses comportamentos.", value: 0, signals: [] }
-        ]
-    },
-    {
-        question: "(3/25) Como ela age fisicamente quando vocês estão juntos em um grupo?",
-        options: [
-            { text: "Ela frequentemente ajusta o cabelo ou roupas para parecer mais atraente.", value: 1, signals: [14] },
-            { text: "Ela inclina a cabeça para o lado enquanto ouve.", value: 2, signals: [6] },
-            { text: "Ela mantém o rosto voltado para você durante a conversa.", value: 3, signals: [12] },
-            { text: "Nunca percebi esses comportamentos.", value: 0, signals: [] }
-        ]
-    },
-    {
-        question: "(4/25) Quando vocês estão conversando, como ela tende a usar os braços?",
-        options: [
-            { text: "Ela mantém os braços descruzados, mostrando receptividade.", value: 2, signals: [7] },
-            { text: "Ela coloca as mãos na cintura ou nos quadris, parecendo querer chamar atenção.", value: 2, signals: [10] },
-            { text: "Ela mantém as mãos relaxadas ao redor de objetos próximos, aproximando-se de você.", value: 1, signals: [15] },
-            { text: "Nunca percebi esses comportamentos.", value: 0, signals: [] }
-        ]
-    },
-    {
-        question: "(5/25) Durante as conversas, como ela demonstra interesse físico?",
-        options: [
-            { text: "Ela expõe o pulso ao gesticular.", value: 1, signals: [9] },
-            { text: "Ela inclina a cabeça e sorri enquanto fala.", value: 2, signals: [6, 12] },
-            { text: "Ela se move de maneira calma e deliberada, como se quisesse prolongar o momento.", value: 1, signals: [20] },
-            { text: "Nunca percebi esses comportamentos.", value: 0, signals: [] }
-        ]
-    },
-    {
-        question: "(6/25) Como ela se comporta quando está falando com você em particular?",
-        options: [
-            { text: "Ela frequentemente se inclina ou move-se para mais perto de você.", value: 3, signals: [17] },
-            { text: "Ela cruza os pés de forma que apontem para você.", value: 1, signals: [19] },
-            { text: "Ela espelha sua postura e movimentos.", value: 2, signals: [18] },
-            { text: "Nunca percebi esses comportamentos.", value: 0, signals: [] }
-        ]
-    },
-    {
-        question: "(7/25) Como é o comportamento dela quando vocês se encontram?",
-        options: [
-            { text: "Ela passa a mão no cabelo frequentemente, como se quisesse chamar sua atenção.", value: 2, signals: [11] },
-            { text: "Ela se posiciona de maneira relaxada e confortável.", value: 2, signals: [16] },
-            { text: "Ela ajusta a postura para parecer mais confiante ao te ver.", value: 2, signals: [4] },
-            { text: "Nunca percebi esses comportamentos.", value: 0, signals: [] }
-        ]
-    },
-    {
-        question: "(8/25) Quando vocês estão juntos, como ela utiliza o espaço ao redor?",
-        options: [
-            { text: "Ela se aproxima e coloca objetos ao redor para diminuir a distância entre vocês.", value: 1, signals: [15] },
-            { text: "Ela posiciona-se de forma aberta e relaxada, com os braços descruzados.", value: 2, signals: [7, 16] },
-            { text: "Ela mantém o rosto direcionado a você e ajusta levemente a postura.", value: 3, signals: [12, 4] },
-            { text: "Nunca percebi esses comportamentos.", value: 0, signals: [] }
-        ]
-    },
-    {
-        question: "(9/25) Como ela tende a se mover durante uma conversa com você?",
-        options: [
-            { text: "Ela se move lentamente e de forma deliberada, como se quisesse prolongar a interação.", value: 1, signals: [20] },
-            { text: "Ela frequentemente se inclina para mais perto de você.", value: 3, signals: [17] },
-            { text: "Ela cruza os pés de forma que ficam apontados para você.", value: 1, signals: [19] },
-            { text: "Nunca percebi esses comportamentos.", value: 0, signals: [] }
-        ]
-    },
-    {
-        question: "(10/25) Como ela reage fisicamente durante momentos de conversa intensa?",
-        options: [
-            { text: "Ela imita sua postura, espelhando seus movimentos.", value: 2, signals: [18] },
-            { text: "Ela mantém uma postura relaxada e aberta, sugerindo conforto.", value: 2, signals: [16] },
-            { text: "Ela inclina a cabeça para o lado, como se estivesse curiosa ou interessada.", value: 2, signals: [6] },
-            { text: "Nunca percebi esses comportamentos.", value: 0, signals: [] }
-        ]
-    },
-    {
-        question: "(11/25) Quando ela sorri para você, como é o sorriso dela?",
-        options: [
-            { text: "Ela sorri de forma genuína, com os olhos e lábios envolvidos.", value: 3, signals: [21] },
-            { text: "Ela dá um sorriso leve e discreto, meio de lado.", value: 2, signals: [26] },
-            { text: "Ela sorri timidamente, desviando o olhar para baixo ou para o lado.", value: 2, signals: [28] },
-            { text: "Nunca percebi esses comportamentos.", value: 0, signals: [] }
-        ]
-    },
-    {
-        question: "(12/25) Como ela costuma olhar para você durante uma conversa?",
-        options: [
-            { text: "Ela mantém um contato visual prolongado e fixo.", value: 3, signals: [24] },
-            { text: "As pupilas dela parecem dilatadas quando ela olha para mim.", value: 2, signals: [27] },
-            { text: "Ela olha rapidamente para mim em intervalos curtos, repetidamente.", value: 2, signals: [29] },
-            { text: "Nunca percebi esses comportamentos.", value: 0, signals: [] }
-        ]
-    },
-    {
-        question: "(13/25) Quando você fala algo interessante ou surpreendente, como ela reage com o rosto?",
-        options: [
-            { text: "Ela levanta brevemente as sobrancelhas ao fazer contato visual.", value: 2, signals: [22] },
-            { text: "Os lábios dela ficam ligeiramente entreabertos.", value: 1, signals: [23] },
-            { text: "Ela morde ou lambe os lábios de forma sutil.", value: 1, signals: [25] },
-            { text: "Nunca percebi esses comportamentos.", value: 0, signals: [] }
-        ]
-    },
-    {
-        question: "(14/25) Como ela se comporta visualmente quando está perto de você?",
-        options: [
-            { text: "Ela inclina a cabeça para o lado enquanto sorri suavemente.", value: 2, signals: [30] },
-            { text: "Ela desvia o olhar e depois olha para mim com um sorriso tímido.", value: 2, signals: [28] },
-            { text: "Ela mantém contato visual prolongado e parece focada.", value: 3, signals: [24] },
-            { text: "Nunca percebi esses comportamentos.", value: 0, signals: [] }
-        ]
-    },
-    {
-        question: "(15/25) Como você descreveria a expressão facial dela em momentos de interação casual?",
-        options: [
-            { text: "Ela sorri de forma genuína, com rugas nos cantos dos olhos.", value: 3, signals: [21] },
-            { text: "Ela levanta as sobrancelhas brevemente, demonstrando surpresa positiva.", value: 2, signals: [22] },
-            { text: "Ela dá um sorriso leve de lado, quase misterioso.", value: 2, signals: [26] },
-            { text: "Nunca percebi esses comportamentos.", value: 0, signals: [] }
-        ]
-    },
-    {
-        question: "(16/25) Como ela se comporta verbalmente durante as conversas com você?",
-        options: [
-            { text: "Ela faz perguntas pessoais sobre meus hobbies e interesses.", value: 3, signals: [31] },
-            { text: "Ela usa apelidos ou termos carinhosos quando fala comigo.", value: 3, signals: [32] },
-            { text: "Ela ri facilmente das minhas piadas, mesmo das mais simples.", value: 2, signals: [33] },
-            { text: "Nunca percebi esses comportamentos.", value: 0, signals: [] }
-        ]
-    },
-    {
-        question: "(17/25) O que você nota sobre a forma como ela conduz a conversa?",
-        options: [
-            { text: "Ela tenta prolongar a conversa trazendo novos tópicos.", value: 3, signals: [34] },
-            { text: "Ela faz comentários flertando e usando elogios.", value: 3, signals: [35] },
-            { text: "Ela concorda e apoia minhas opiniões durante a conversa.", value: 2, signals: [36] },
-            { text: "Nunca percebi esses comportamentos.", value: 0, signals: [] }
-        ]
-    },
-    {
-        question: "(18/25) Como é o tom de voz dela quando fala com você?",
-        options: [
-            { text: "Ela usa um tom de voz suave e doce para demonstrar carinho.", value: 3, signals: [37] },
-            { text: "Ela brinca e provoca levemente para deixar a conversa divertida.", value: 2, signals: [39] },
-            { text: "Ela revela detalhes pessoais para criar uma conexão mais profunda.", value: 3, signals: [38] },
-            { text: "Nunca percebi esses comportamentos.", value: 0, signals: [] }
-        ]
-    },
-    {
-        question: "(19/25) Como ela age quando vocês estão conversando online ou trocando mensagens?",
-        options: [
-            { text: "Ela responde rapidamente, mantendo a conversa ativa.", value: 3, signals: [40] },
-            { text: "Ela chama minha atenção para conversas privadas, iniciando diálogos mais reservados.", value: 3, signals: [41] },
-            { text: "Ela reformula perguntas para continuar a interação e manter o diálogo.", value: 2, signals: [42] },
-            { text: "Nunca percebi esses comportamentos.", value: 0, signals: [] }
-        ]
-    },
-    {
-        question: "(20/25) Como ela demonstra interesse durante uma conversa?",
-        options: [
-            { text: "Ela usa palavras que indicam interesse, como 'quero saber mais' ou 'me conte mais'.", value: 3, signals: [43] },
-            { text: "Ela dá feedback positivo, comentando que algo é interessante ou engraçado.", value: 2, signals: [44] },
-            { text: "Ela expressa preocupação genuína, perguntando se estou bem ou se preciso de algo.", value: 3, signals: [45] },
-            { text: "Nunca percebi esses comportamentos.", value: 0, signals: [] }
-        ]
-    },
-    {
-        question: "(21/25) Como ela se comporta em relação a você durante conversas online?",
-        options: [
-            { text: "Ela deixa mensagens sem terminar para continuar a conversa depois.", value: 3, signals: [46] },
-            { text: "Ela cria desculpas para iniciar conversas rápidas, como pedir uma opinião trivial.", value: 2, signals: [50] },
-            { text: "Ela se lembra de pequenos detalhes de conversas passadas e traz à tona novamente.", value: 3, signals: [52] },
-            { text: "Nunca percebi esses comportamentos.", value: 0, signals: [] }
-        ]
-    },
-    {
-        question: "(22/25) Como ela age em ambientes compartilhados ou em grupo?",
-        options: [
-            { text: "Ela tenta estar perto de mim, mesmo sem um motivo claro.", value: 3, signals: [47] },
-            { text: "Ela olha para mim frequentemente durante conversas em grupo, mesmo quando outros estão falando.", value: 2, signals: [51] },
-            { text: "Ela se posiciona de forma a facilitar o contato visual comigo.", value: 2, signals: [53] },
-            { text: "Nunca percebi esses comportamentos.", value: 0, signals: [] }
-        ]
-    },
-    {
-        question: "(23/25) Como ela se comporta em relação a você em situações casuais ou no dia a dia?",
-        options: [
-            { text: "Ela faz pequenos gestos de cuidado, como trazer uma bebida ou oferecer um lanche.", value: 3, signals: [48] },
-            { text: "Ela prolonga os momentos de interação, hesitando antes de se despedir.", value: 2, signals: [49] },
-            { text: "Ela sugere planos futuros de forma sutil, dizendo 'devíamos fazer isso algum dia'.", value: 2, signals: [60] },
-            { text: "Nunca percebi esses comportamentos.", value: 0, signals: [] }
-        ]
-    },
-    {
-        question: "(24/25) Como ela age quando vocês se encontram em um local público ou inesperado?",
-        options: [
-            { text: "Ela aparece em locais onde sabe que estarei, mesmo sem deixar claro que foi intencional.", value: 3, signals: [54] },
-            { text: "Ela se oferece para me acompanhar em tarefas triviais, como ir buscar algo.", value: 2, signals: [58] },
-            { text: "Ela desvia conversas para tópicos que envolvem a mim, tentando manter meu interesse ativo.", value: 2, signals: [59] },
-            { text: "Nunca percebi esses comportamentos.", value: 0, signals: [] }
-        ]
-    },
-    {
-        question: "(25/25) Como ela demonstra estar confortável ao seu lado?",
-        options: [
-            { text: "Ela demonstra conforto com longos silêncios, não se sentindo obrigada a falar.", value: 3, signals: [55] },
-            { text: "Ela espelha discretamente o meu ritmo de movimento, ajustando-se para coincidir com o meu.", value: 2, signals: [57] },
-            { text: "Ela faz pequenos comentários que criam intimidade, como 'eu também sinto isso'.", value: 3, signals: [56] },
-            { text: "Nunca percebi esses comportamentos.", value: 0, signals: [] }
-        ]
-    }
+  question: "(1/25) Quando você está conversando com ela, como ela costuma se comportar fisicamente?",
+  options: [
+    { text: "Ela inclina o corpo em sua direção durante a conversa.", value: 3, signals: [1] },
+    { text: "Ela ajusta a postura para parecer mais confiante quando você chega.", value: 2, signals: [4] },
+    { text: "Ela toca casualmente em você enquanto fala.", value: 3, signals: [3] },
+    { text: "Nunca percebi esses comportamentos.", value: 0, signals: [] }
+  ]
+},
+{
+  question: "(2/25) Quando vocês estão próximos, o que você nota na linguagem corporal dela?",
+  options: [
+    { text: "Ela se aproxima e se posiciona perto de você.", value: 3, signals: [2] },
+    { text: "Ela mantém os pés apontados na sua direção.", value: 1, signals: [5] },
+    { text: "Ela imita sutilmente seus movimentos.", value: 2, signals: [8] },
+    { text: "Nunca percebi esses comportamentos.", value: 0, signals: [] }
+  ]
+},
+{
+  question: "(3/25) Como ela age fisicamente quando vocês estão juntos em um grupo?",
+  options: [
+    { text: "Ela frequentemente ajusta o cabelo ou roupas para parecer mais atraente.", value: 1, signals: [14] },
+    { text: "Ela inclina a cabeça para o lado enquanto ouve.", value: 2, signals: [6] },
+    { text: "Ela mantém o rosto voltado para você durante a conversa.", value: 3, signals: [12] },
+    { text: "Nunca percebi esses comportamentos.", value: 0, signals: [] }
+  ]
+},
+{
+  question: "(4/25) Quando vocês estão conversando, como ela tende a usar os braços?",
+  options: [
+    { text: "Ela mantém os braços descruzados, mostrando receptividade.", value: 2, signals: [7] },
+    { text: "Ela coloca as mãos na cintura ou nos quadris, parecendo querer chamar atenção.", value: 2, signals: [10] },
+    { text: "Ela mantém as mãos relaxadas ao redor de objetos próximos, aproximando-se de você.", value: 1, signals: [15] },
+    { text: "Nunca percebi esses comportamentos.", value: 0, signals: [] }
+  ]
+},
+{
+  question: "(5/25) Durante as conversas, como ela demonstra interesse físico?",
+  options: [
+    { text: "Ela expõe o pulso ao gesticular.", value: 1, signals: [9] },
+    { text: "Ela inclina a cabeça e sorri enquanto fala.", value: 2, signals: [6, 12] },
+    { text: "Ela se move de maneira calma e deliberada, como se quisesse prolongar o momento.", value: 1, signals: [20] },
+    { text: "Nunca percebi esses comportamentos.", value: 0, signals: [] }
+  ]
+},
+{
+  question: "(6/25) Como ela se comporta quando está falando com você em particular?",
+  options: [
+    { text: "Ela frequentemente se inclina ou move-se para mais perto de você.", value: 3, signals: [17] },
+    { text: "Ela cruza os pés de forma que apontem para você.", value: 1, signals: [19] },
+    { text: "Ela espelha sua postura e movimentos.", value: 2, signals: [18] },
+    { text: "Nunca percebi esses comportamentos.", value: 0, signals: [] }
+  ]
+},
+{
+  question: "(7/25) Como é o comportamento dela quando vocês se encontram?",
+  options: [
+    { text: "Ela passa a mão no cabelo frequentemente, como se quisesse chamar sua atenção.", value: 2, signals: [11] },
+    { text: "Ela se posiciona de maneira relaxada e confortável.", value: 2, signals: [16] },
+    { text: "Ela ajusta a postura para parecer mais confiante ao te ver.", value: 2, signals: [4] },
+    { text: "Nunca percebi esses comportamentos.", value: 0, signals: [] }
+  ]
+},
+{
+  question: "(8/25) Quando vocês estão juntos, como ela utiliza o espaço ao redor?",
+  options: [
+    { text: "Ela se aproxima e coloca objetos ao redor para diminuir a distância entre vocês.", value: 1, signals: [15] },
+    { text: "Ela posiciona-se de forma aberta e relaxada, com os braços descruzados.", value: 2, signals: [7, 16] },
+    { text: "Ela mantém o rosto direcionado a você e ajusta levemente a postura.", value: 3, signals: [12, 4] },
+    { text: "Nunca percebi esses comportamentos.", value: 0, signals: [] }
+  ]
+},
+{
+  question: "(9/25) Como ela tende a se mover durante uma conversa com você?",
+  options: [
+    { text: "Ela se move lentamente e de forma deliberada, como se quisesse prolongar a interação.", value: 1, signals: [20] },
+    { text: "Ela frequentemente se inclina para mais perto de você.", value: 3, signals: [17] },
+    { text: "Ela cruza os pés de forma que ficam apontados para você.", value: 1, signals: [19] },
+    { text: "Nunca percebi esses comportamentos.", value: 0, signals: [] }
+  ]
+},
+{
+  question: "(10/25) Como ela reage fisicamente durante momentos de conversa intensa?",
+  options: [
+    { text: "Ela imita sua postura, espelhando seus movimentos.", value: 2, signals: [18] },
+    { text: "Ela mantém uma postura relaxada e aberta, sugerindo conforto.", value: 2, signals: [16] },
+    { text: "Ela inclina a cabeça para o lado, como se estivesse curiosa ou interessada.", value: 2, signals: [6] },
+    { text: "Nunca percebi esses comportamentos.", value: 0, signals: [] }
+  ]
+},
+{
+  question: "(11/25) Quando ela sorri para você, como é o sorriso dela?",
+  options: [
+    { text: "Ela sorri de forma genuína, com os olhos e lábios envolvidos.", value: 3, signals: [21] },
+    { text: "Ela dá um sorriso leve e discreto, meio de lado.", value: 2, signals: [26] },
+    { text: "Ela sorri timidamente, desviando o olhar para baixo ou para o lado.", value: 2, signals: [28] },
+    { text: "Nunca percebi esses comportamentos.", value: 0, signals: [] }
+  ]
+},
+{
+  question: "(12/25) Como ela costuma olhar para você durante uma conversa?",
+  options: [
+    { text: "Ela mantém um contato visual prolongado e fixo.", value: 3, signals: [24] },
+    { text: "As pupilas dela parecem dilatadas quando ela olha para mim.", value: 2, signals: [27] },
+    { text: "Ela olha rapidamente para mim em intervalos curtos, repetidamente.", value: 2, signals: [29] },
+    { text: "Nunca percebi esses comportamentos.", value: 0, signals: [] }
+  ]
+},
+{
+  question: "(13/25) Quando você fala algo interessante ou surpreendente, como ela reage com o rosto?",
+  options: [
+    { text: "Ela levanta brevemente as sobrancelhas ao fazer contato visual.", value: 2, signals: [22] },
+    { text: "Os lábios dela ficam ligeiramente entreabertos.", value: 1, signals: [23] },
+    { text: "Ela morde ou lambe os lábios de forma sutil.", value: 1, signals: [25] },
+    { text: "Nunca percebi esses comportamentos.", value: 0, signals: [] }
+  ]
+},
+{
+  question: "(14/25) Como ela se comporta visualmente quando está perto de você?",
+  options: [
+    { text: "Ela inclina a cabeça para o lado enquanto sorri suavemente.", value: 2, signals: [30] },
+    { text: "Ela desvia o olhar e depois olha para mim com um sorriso tímido.", value: 2, signals: [28] },
+    { text: "Ela mantém contato visual prolongado e parece focada.", value: 3, signals: [24] },
+    { text: "Nunca percebi esses comportamentos.", value: 0, signals: [] }
+  ]
+},
+{
+  question: "(15/25) Como você descreveria a expressão facial dela em momentos de interação casual?",
+  options: [
+    { text: "Ela sorri de forma genuína, com rugas nos cantos dos olhos.", value: 3, signals: [21] },
+    { text: "Ela levanta as sobrancelhas brevemente, demonstrando surpresa positiva.", value: 2, signals: [22] },
+    { text: "Ela dá um sorriso leve de lado, quase misterioso.", value: 2, signals: [26] },
+    { text: "Nunca percebi esses comportamentos.", value: 0, signals: [] }
+  ]
+},
+{
+  question: "(16/25) Como ela se comporta verbalmente durante as conversas com você?",
+  options: [
+    { text: "Ela faz perguntas pessoais sobre meus hobbies e interesses.", value: 3, signals: [31] },
+    { text: "Ela usa apelidos ou termos carinhosos quando fala comigo.", value: 3, signals: [32] },
+    { text: "Ela ri facilmente das minhas piadas, mesmo das mais simples.", value: 2, signals: [33] },
+    { text: "Nunca percebi esses comportamentos.", value: 0, signals: [] }
+  ]
+},
+{
+  question: "(17/25) O que você nota sobre a forma como ela conduz a conversa?",
+  options: [
+    { text: "Ela tenta prolongar a conversa trazendo novos tópicos.", value: 3, signals: [34] },
+    { text: "Ela faz comentários flertando e usando elogios.", value: 3, signals: [35] },
+    { text: "Ela concorda e apoia minhas opiniões durante a conversa.", value: 2, signals: [36] },
+    { text: "Nunca percebi esses comportamentos.", value: 0, signals: [] }
+  ]
+},
+{
+  question: "(18/25) Como é o tom de voz dela quando fala com você?",
+  options: [
+    { text: "Ela usa um tom de voz suave e doce para demonstrar carinho.", value: 3, signals: [37] },
+    { text: "Ela brinca e provoca levemente para deixar a conversa divertida.", value: 2, signals: [39] },
+    { text: "Ela revela detalhes pessoais para criar uma conexão mais profunda.", value: 3, signals: [38] },
+    { text: "Nunca percebi esses comportamentos.", value: 0, signals: [] }
+  ]
+},
+{
+  question: "(19/25) Como ela age quando vocês estão conversando online ou trocando mensagens?",
+  options: [
+    { text: "Ela responde rapidamente, mantendo a conversa ativa.", value: 3, signals: [40] },
+    { text: "Ela chama minha atenção para conversas privadas, iniciando diálogos mais reservados.", value: 3, signals: [41] },
+    { text: "Ela reformula perguntas para continuar a interação e manter o diálogo.", value: 2, signals: [42] },
+    { text: "Nunca percebi esses comportamentos.", value: 0, signals: [] }
+  ]
+},
+{
+  question: "(20/25) Como ela demonstra interesse durante uma conversa?",
+  options: [
+    { text: "Ela usa palavras que indicam interesse, como 'quero saber mais' ou 'me conte mais'.", value: 3, signals: [43] },
+    { text: "Ela dá feedback positivo, comentando que algo é interessante ou engraçado.", value: 2, signals: [44] },
+    { text: "Ela expressa preocupação genuína, perguntando se estou bem ou se preciso de algo.", value: 3, signals: [45] },
+    { text: "Nunca percebi esses comportamentos.", value: 0, signals: [] }
+  ]
+},
+{
+  question: "(21/25) Como ela se comporta em relação a você durante conversas online?",
+  options: [
+    { text: "Ela deixa mensagens sem terminar para continuar a conversa depois.", value: 3, signals: [46] },
+    { text: "Ela cria desculpas para iniciar conversas rápidas, como pedir uma opinião trivial.", value: 2, signals: [50] },
+    { text: "Ela se lembra de pequenos detalhes de conversas passadas e traz à tona novamente.", value: 3, signals: [52] },
+    { text: "Nunca percebi esses comportamentos.", value: 0, signals: [] }
+  ]
+},
+{
+  question: "(22/25) Como ela age em ambientes compartilhados ou em grupo?",
+  options: [
+    { text: "Ela tenta estar perto de mim, mesmo sem um motivo claro.", value: 3, signals: [47] },
+    { text: "Ela olha para mim frequentemente durante conversas em grupo, mesmo quando outros estão falando.", value: 2, signals: [51] },
+    { text: "Ela se posiciona de forma a facilitar o contato visual comigo.", value: 2, signals: [53] },
+    { text: "Nunca percebi esses comportamentos.", value: 0, signals: [] }
+  ]
+},
+{
+  question: "(23/25) Como ela se comporta em relação a você em situações casuais ou no dia a dia?",
+  options: [
+    { text: "Ela faz pequenos gestos de cuidado, como trazer uma bebida ou oferecer um lanche.", value: 3, signals: [48] },
+    { text: "Ela prolonga os momentos de interação, hesitando antes de se despedir.", value: 2, signals: [49] },
+    { text: "Ela sugere planos futuros de forma sutil, dizendo 'devíamos fazer isso algum dia'.", value: 2, signals: [60] },
+    { text: "Nunca percebi esses comportamentos.", value: 0, signals: [] }
+  ]
+},
+{
+  question: "(24/25) Como ela age quando vocês se encontram em um local público ou inesperado?",
+  options: [
+    { text: "Ela aparece em locais onde sabe que estarei, mesmo sem deixar claro que foi intencional.", value: 3, signals: [54] },
+    { text: "Ela se oferece para me acompanhar em tarefas triviais, como ir buscar algo.", value: 2, signals: [58] },
+    { text: "Ela desvia conversas para tópicos que envolvem a mim, tentando manter meu interesse ativo.", value: 2, signals: [59] },
+    { text: "Nunca percebi esses comportamentos.", value: 0, signals: [] }
+  ]
+},
+{
+  question: "(25/25) Como ela demonstra estar confortável ao seu lado?",
+  options: [
+    { text: "Ela demonstra conforto com longos silêncios, não se sentindo obrigada a falar.", value: 3, signals: [55] },
+    { text: "Ela espelha discretamente o meu ritmo de movimento, ajustando-se para coincidir com o meu.", value: 2, signals: [57] },
+    { text: "Ela faz pequenos comentários que criam intimidade, como 'eu também sinto isso'.", value: 3, signals: [56] },
+    { text: "Nunca percebi esses comportamentos.", value: 0, signals: [] }
+  ]
+}
 
 ];
 
 const highAttractionSignals = [
-    1, 2, 3, 6, 11, 12, 17, 18, 21, 24, 25, 30, 32, 35, 37, 38, 40, 41, 46, 47, 48, 52, 54, 56
+  1, 2, 3, 6, 11, 12, 17, 18, 21, 24, 25, 30, 32, 35, 37, 38, 40, 41, 46, 47, 48, 52, 54, 56
 ];
 
 // Array de sinais (com apenas alguns exemplos)
@@ -322,100 +322,100 @@ const signals = [{
   whatNotToDo: "Não adote uma postura submissa ou insegura — isso pode inverter a dinâmica e esfriar o desejo dela.",
   howToMakeHerShowThisSignal: "Provoque com silêncio e presença inabalável. Quando ela sentir que não está no controle da situação emocional, o corpo dela vai buscar recuperar esse domínio — e a postura com mãos nos quadris é o reflexo involuntário desse impulso interno."
 }
-,
-  {
-    id: 11,
-    name: "Jogada de Cabelo",
-    definition: "Passar a mão no cabelo frequentemente é um sinal de que ela quer chamar sua atenção.",
-    group: "linguagemCorporal",
-    whatToDo: "Olhe discretamente para o gesto, depois encare os olhos dela com um leve sorriso. Isso cria tensão sexual sem dizer uma palavra.",
-    whatNotToDo: "Não comente ou brinque com isso de forma óbvia — ela quer ser notada, não exposta.",
-    howToMakeHerShowThisSignal: "Fique em silêncio e passe os olhos pelo rosto dela, parando brevemente no cabelo — como se estivesse admirando, mas sem verbalizar. Essa leitura visual desperta o instinto de autovalidação estética — e o cabelo vira a primeira área que ela toca."
-  },
-  {
-    id: 12,
-    name: "Rosto Voltado Para Você",
-    definition: "Manter o rosto direcionado para você é um sinal de que ela está interessada na conversa.",
-    group: "linguagemCorporal",
-    whatToDo: "Mantenha contato visual firme e aproveite para falar algo pessoal. O cérebro dela vai associar essa atenção à intimidade.",
-    whatNotToDo: "Não desvie o olhar frequentemente — isso enfraquece a conexão que ela está tentando criar.",
-    howToMakeHerShowThisSignal: "Durante uma troca de olhares, mova-se levemente para o lado e observe se o rosto dela acompanha. Essa sutileza obriga o foco visual dela a se alinhar com o seu, e o gesto de manter o rosto voltado vira resposta automática ao magnetismo do seu olhar."
-  },
-  {
-    id: 13,
-    name: "Leve Toque no Braço",
-    definition: "Um toque leve no braço enquanto fala pode ser um gesto de conexão e empatia.",
-    group: "linguagemCorporal",
-    whatToDo: "Fale algo que demonstre que você percebeu a conexão, como 'gostei da sua energia'. Valide o gesto com carisma.",
-    whatNotToDo: "Não se mexa ou recue — ela pode interpretar como rejeição ou quebra do clima.",
-    howToMakeHerShowThisSignal: "Conte algo que exija empatia, mas sem dramatizar. Se ela sentir conexão emocional verdadeira, o toque no braço vem como resposta não-verbal de consolo, apoio ou cumplicidade."
-  },
-  {
-    id: 14,
-    name: "Ajustar Roupa ou Cabelo",
-    definition: "Frequentemente ajustar a roupa ou cabelo pode indicar que ela está tentando parecer atraente para você.",
-    group: "linguagemCorporal",
-    whatToDo: "Elogie um detalhe pequeno e específico, como a cor do brinco ou o estilo do cabelo — isso mostra atenção e validação.",
-    whatNotToDo: "Não ignore totalmente esses gestos — ela pode sentir que está tentando em vão te impressionar.",
-    howToMakeHerShowThisSignal: "Incline-se devagar como se fosse compartilhar algo secreto e olhe para ela com atenção intensa. O corpo dela interpreta isso como momento de exposição — e o ajuste nos cabelos ou roupa surge como reação instintiva de querer parecer melhor naquele instante."
-  },
-  {
-    id: 15,
-    name: "Braços ao Redor de Objetos",
-    definition: "Colocar braços ao redor de objetos próximos para se aproximar de você indica que ela quer reduzir a distância entre vocês.",
-    group: "linguagemCorporal",
-    whatToDo: "Aproxime levemente seu corpo em resposta, sem invadir. Crie um 'espaço exclusivo' entre vocês dois.",
-    whatNotToDo: "Não crie barreiras físicas (ex: cruzar braços ou virar de lado) — isso quebra o campo de aproximação que ela criou.",
-    howToMakeHerShowThisSignal: "Use o ambiente a favor: coloque um objeto neutro (como um copo ou celular) entre vocês e não se mexa. O corpo dela, querendo encurtar a distância, irá rodear o obstáculo com os braços como tentativa inconsciente de aproximação."
-  },
-  {
-    id: 16,
-    name: "Posição Relaxada",
-    definition: "Uma postura relaxada e aberta indica conforto e confiança na interação.",
-    group: "linguagemCorporal",
-    whatToDo: "Entre no mesmo ritmo: fale mais devagar, use pausas estratégicas e demonstre segurança tranquila.",
-    whatNotToDo: "Não demonstre pressa, ansiedade ou agitação — isso desestabiliza a segurança emocional que ela criou.",
-    howToMakeHerShowThisSignal: "Fique totalmente imóvel e confortável em silêncio, com respiração profunda e estável. Ela, sentindo que não há expectativa ou julgamento, irá relaxar aos poucos — até que a postura do corpo revele segurança e presença igual à sua."
-  },
-  {
-    id: 17,
-    name: "Movimento em Direção a Você",
-    definition: "Inclinar-se ou mover-se para mais perto de você durante a conversa indica atração.",
-    group: "linguagemCorporal",
-    whatToDo: "Diminua a voz levemente, aproxime-se com naturalidade e olhe diretamente para os lábios dela ao falar.",
-    whatNotToDo: "Não recue nem faça piada nervosa — você precisa sustentar o momento ou ele morre.",
-    howToMakeHerShowThisSignal: "Crie uma lacuna emocional, como se estivesse prestes a falar algo íntimo e segurasse. O mistério carrega o ar de tensão, e o corpo dela avança — literalmente — para tentar decifrar ou se aproximar da resposta que você não deu."
-  },
-  {
-    id: 18,
-    name: "Postura Espelhada",
-    definition: "Copiar a postura e movimentos é um sinal de sintonia e conexão.",
-    group: "linguagemCorporal",
-    whatToDo: "Lidere a dança inconsciente: mude sutilmente sua postura e veja se ela acompanha — isso cria tensão e controle sutil.",
-    whatNotToDo: "Não quebre o ritmo com gestos aleatórios ou movimentos agitados — você perde a sincronia emocional.",
-    howToMakeHerShowThisSignal: "Mude sua postura levemente (ex: incline o tronco, cruze as pernas devagar) em momentos de silêncio emocional. Se ela estiver conectada, o corpo dela irá copiar sem perceber — como tentativa de manter a sincronia e o vínculo."
-  },
-  {
-    id: 19,
-    name: "Pés Cruzados em Sua Direção",
-    definition: "Cruzar os pés de forma que apontem para você mostra que ela está engajada e focada em você.",
-    group: "linguagemCorporal",
-    whatToDo: "Incline o corpo levemente para ela, mantendo os ombros e peito voltados. Isso amplia a energia da atenção mútua.",
-    whatNotToDo: "Não cruze os braços ou vire os pés para outro lado — esses detalhes quebram o rapport sem você perceber.",
-    howToMakeHerShowThisSignal: "Fale algo enraizado e verdadeiro, enquanto permanece firme e parado. A estabilidade faz com que ela 'alinhe' o corpo para captar melhor a energia — e os pés se cruzam ou giram em sua direção como reflexo de atenção total."
-  },
-  {
-    id: 20,
-    name: "Movimento Lento e Deliberado",
-    definition: "Movimentos suaves e lentos podem indicar que ela está confortável e tentando prolongar a interação.",
-    group: "linguagemCorporal",
-    whatToDo: "Sincronize sua energia. Use silêncios com propósito e frases com subtexto. Crie uma atmosfera quase cinematográfica.",
-    whatNotToDo: "Não apresse o ritmo, interrompa ou mude de ambiente — ela está curtindo o momento e quer que dure.",
-    howToMakeHerShowThisSignal: "Diminua o ritmo da conversa ao ponto de parecer cena de filme. Quando ela sentir que você controla o tempo e está presente de verdade, o corpo desacelera também — e os movimentos dela ganham fluidez como sinal de rendição emocional."
-  }
+  ,
+{
+  id: 11,
+  name: "Jogada de Cabelo",
+  definition: "Passar a mão no cabelo frequentemente é um sinal de que ela quer chamar sua atenção.",
+  group: "linguagemCorporal",
+  whatToDo: "Olhe discretamente para o gesto, depois encare os olhos dela com um leve sorriso. Isso cria tensão sexual sem dizer uma palavra.",
+  whatNotToDo: "Não comente ou brinque com isso de forma óbvia — ela quer ser notada, não exposta.",
+  howToMakeHerShowThisSignal: "Fique em silêncio e passe os olhos pelo rosto dela, parando brevemente no cabelo — como se estivesse admirando, mas sem verbalizar. Essa leitura visual desperta o instinto de autovalidação estética — e o cabelo vira a primeira área que ela toca."
+},
+{
+  id: 12,
+  name: "Rosto Voltado Para Você",
+  definition: "Manter o rosto direcionado para você é um sinal de que ela está interessada na conversa.",
+  group: "linguagemCorporal",
+  whatToDo: "Mantenha contato visual firme e aproveite para falar algo pessoal. O cérebro dela vai associar essa atenção à intimidade.",
+  whatNotToDo: "Não desvie o olhar frequentemente — isso enfraquece a conexão que ela está tentando criar.",
+  howToMakeHerShowThisSignal: "Durante uma troca de olhares, mova-se levemente para o lado e observe se o rosto dela acompanha. Essa sutileza obriga o foco visual dela a se alinhar com o seu, e o gesto de manter o rosto voltado vira resposta automática ao magnetismo do seu olhar."
+},
+{
+  id: 13,
+  name: "Leve Toque no Braço",
+  definition: "Um toque leve no braço enquanto fala pode ser um gesto de conexão e empatia.",
+  group: "linguagemCorporal",
+  whatToDo: "Fale algo que demonstre que você percebeu a conexão, como 'gostei da sua energia'. Valide o gesto com carisma.",
+  whatNotToDo: "Não se mexa ou recue — ela pode interpretar como rejeição ou quebra do clima.",
+  howToMakeHerShowThisSignal: "Conte algo que exija empatia, mas sem dramatizar. Se ela sentir conexão emocional verdadeira, o toque no braço vem como resposta não-verbal de consolo, apoio ou cumplicidade."
+},
+{
+  id: 14,
+  name: "Ajustar Roupa ou Cabelo",
+  definition: "Frequentemente ajustar a roupa ou cabelo pode indicar que ela está tentando parecer atraente para você.",
+  group: "linguagemCorporal",
+  whatToDo: "Elogie um detalhe pequeno e específico, como a cor do brinco ou o estilo do cabelo — isso mostra atenção e validação.",
+  whatNotToDo: "Não ignore totalmente esses gestos — ela pode sentir que está tentando em vão te impressionar.",
+  howToMakeHerShowThisSignal: "Incline-se devagar como se fosse compartilhar algo secreto e olhe para ela com atenção intensa. O corpo dela interpreta isso como momento de exposição — e o ajuste nos cabelos ou roupa surge como reação instintiva de querer parecer melhor naquele instante."
+},
+{
+  id: 15,
+  name: "Braços ao Redor de Objetos",
+  definition: "Colocar braços ao redor de objetos próximos para se aproximar de você indica que ela quer reduzir a distância entre vocês.",
+  group: "linguagemCorporal",
+  whatToDo: "Aproxime levemente seu corpo em resposta, sem invadir. Crie um 'espaço exclusivo' entre vocês dois.",
+  whatNotToDo: "Não crie barreiras físicas (ex: cruzar braços ou virar de lado) — isso quebra o campo de aproximação que ela criou.",
+  howToMakeHerShowThisSignal: "Use o ambiente a favor: coloque um objeto neutro (como um copo ou celular) entre vocês e não se mexa. O corpo dela, querendo encurtar a distância, irá rodear o obstáculo com os braços como tentativa inconsciente de aproximação."
+},
+{
+  id: 16,
+  name: "Posição Relaxada",
+  definition: "Uma postura relaxada e aberta indica conforto e confiança na interação.",
+  group: "linguagemCorporal",
+  whatToDo: "Entre no mesmo ritmo: fale mais devagar, use pausas estratégicas e demonstre segurança tranquila.",
+  whatNotToDo: "Não demonstre pressa, ansiedade ou agitação — isso desestabiliza a segurança emocional que ela criou.",
+  howToMakeHerShowThisSignal: "Fique totalmente imóvel e confortável em silêncio, com respiração profunda e estável. Ela, sentindo que não há expectativa ou julgamento, irá relaxar aos poucos — até que a postura do corpo revele segurança e presença igual à sua."
+},
+{
+  id: 17,
+  name: "Movimento em Direção a Você",
+  definition: "Inclinar-se ou mover-se para mais perto de você durante a conversa indica atração.",
+  group: "linguagemCorporal",
+  whatToDo: "Diminua a voz levemente, aproxime-se com naturalidade e olhe diretamente para os lábios dela ao falar.",
+  whatNotToDo: "Não recue nem faça piada nervosa — você precisa sustentar o momento ou ele morre.",
+  howToMakeHerShowThisSignal: "Crie uma lacuna emocional, como se estivesse prestes a falar algo íntimo e segurasse. O mistério carrega o ar de tensão, e o corpo dela avança — literalmente — para tentar decifrar ou se aproximar da resposta que você não deu."
+},
+{
+  id: 18,
+  name: "Postura Espelhada",
+  definition: "Copiar a postura e movimentos é um sinal de sintonia e conexão.",
+  group: "linguagemCorporal",
+  whatToDo: "Lidere a dança inconsciente: mude sutilmente sua postura e veja se ela acompanha — isso cria tensão e controle sutil.",
+  whatNotToDo: "Não quebre o ritmo com gestos aleatórios ou movimentos agitados — você perde a sincronia emocional.",
+  howToMakeHerShowThisSignal: "Mude sua postura levemente (ex: incline o tronco, cruze as pernas devagar) em momentos de silêncio emocional. Se ela estiver conectada, o corpo dela irá copiar sem perceber — como tentativa de manter a sincronia e o vínculo."
+},
+{
+  id: 19,
+  name: "Pés Cruzados em Sua Direção",
+  definition: "Cruzar os pés de forma que apontem para você mostra que ela está engajada e focada em você.",
+  group: "linguagemCorporal",
+  whatToDo: "Incline o corpo levemente para ela, mantendo os ombros e peito voltados. Isso amplia a energia da atenção mútua.",
+  whatNotToDo: "Não cruze os braços ou vire os pés para outro lado — esses detalhes quebram o rapport sem você perceber.",
+  howToMakeHerShowThisSignal: "Fale algo enraizado e verdadeiro, enquanto permanece firme e parado. A estabilidade faz com que ela 'alinhe' o corpo para captar melhor a energia — e os pés se cruzam ou giram em sua direção como reflexo de atenção total."
+},
+{
+  id: 20,
+  name: "Movimento Lento e Deliberado",
+  definition: "Movimentos suaves e lentos podem indicar que ela está confortável e tentando prolongar a interação.",
+  group: "linguagemCorporal",
+  whatToDo: "Sincronize sua energia. Use silêncios com propósito e frases com subtexto. Crie uma atmosfera quase cinematográfica.",
+  whatNotToDo: "Não apresse o ritmo, interrompa ou mude de ambiente — ela está curtindo o momento e quer que dure.",
+  howToMakeHerShowThisSignal: "Diminua o ritmo da conversa ao ponto de parecer cena de filme. Quando ela sentir que você controla o tempo e está presente de verdade, o corpo desacelera também — e os movimentos dela ganham fluidez como sinal de rendição emocional."
+}
 
-  
-,
+
+  ,
 {
   id: 21,
   name: "Sorriso Genuíno (Sorriso Duchenne)",
@@ -506,8 +506,8 @@ const signals = [{
   whatNotToDo: "Não traga assuntos banais ou superficiais nesse momento — você pode fechar o canal emocional que ela abriu.",
   howToMakeHerShowThisSignal: "Compartilhe algo vulnerável sem teatralidade. Quando ela sente que você abriu um pedaço real de si, o corpo dela se inclina para o lado como gesto involuntário de empatia, sinalizando que você a tocou de verdade."
 }
-  
-,
+
+  ,
 
 {
   id: 31,
@@ -599,101 +599,101 @@ const signals = [{
   whatNotToDo: "Não responder por horas como jogo de ego — ela pode interpretar como desinteresse genuíno e se afastar.",
   howToMakeHerShowThisSignal: "Envie mensagens que parecem ter algo escondido — como se cada frase pudesse ter um significado oculto. Isso faz com que ela fique viciada na resposta, e você vira o estímulo que ela quer manter por perto."
 }
-  
-,
 
-  {
-    id: 41,
-    name: "Chama Sua Atenção para Conversas Privadas",
-    definition: "Inicia ou direciona o diálogo para um ambiente mais reservado e pessoal.",
-    group: "interacaoVerbal",
-    whatToDo: "Aproveite o ambiente privado para aumentar o nível de intimidade: conte algo que poucos sabem ou faça uma pergunta emocional.",
-    whatNotToDo: "Não trate a conversa como trivial — ela escolheu te isolar emocionalmente, então não desperdice.",
-    howToMakeHerShowThisSignal: "Demonstre vulnerabilidade de forma sutil, como se confiasse nela mais do que nos outros ao redor. Isso ativa nela o impulso inconsciente de criar um espaço só entre vocês."
-  },
-  {
-    id: 42,
-    name: "Reformula Perguntas Para Continuar a Interação",
-    definition: "Faz perguntas abertas que incentivam a troca de ideias.",
-    group: "interacaoVerbal",
-    whatToDo: "Dê respostas com histórias e subtexto — ela está buscando mais do que informação, quer emoção.",
-    whatNotToDo: "Não responda de forma lógica e fria — isso mata a fluidez da troca e o interesse emocional.",
-    howToMakeHerShowThisSignal: "Responda como se escondesse um significado por trás das palavras. Ela sente que precisa entender melhor e reformula — puxada pelo mistério emocional."
-  },
-  {
-    id: 43,
-    name: "Usa Palavras que Indicam Interesse e Envolvimento",
-    definition: "Expressões como 'quero saber mais', 'fale mais sobre isso' ou 'isso é tão interessante'.",
-    group: "interacaoVerbal",
-    whatToDo: "Aprofunde a conversa com detalhes e mistério. Deixe algumas partes em aberto para ela se envolver ainda mais.",
-    whatNotToDo: "Não banalize ou fuja do assunto — ela está te dando permissão para aprofundar a conexão.",
-    howToMakeHerShowThisSignal: "Entregue partes da sua história como se estivesse contando um segredo mal revelado. Isso acende o envolvimento e ativa nela o desejo de continuar ouvindo."
-  },
-  {
-    id: 44,
-    name: "Dá Feedback Positivo Frequente",
-    definition: "Comenta que algo é engraçado, interessante ou surpreendente para manter a conversa leve.",
-    group: "interacaoVerbal",
-    whatToDo: "Use o feedback dela como alavanca para introduzir um novo lado seu — mais autêntico, mais profundo ou mais ousado.",
-    whatNotToDo: "Não retribua sempre com 'obrigado' ou frases padrão — isso perde a oportunidade de avançar emocionalmente.",
-    howToMakeHerShowThisSignal: "Diga algo com um charme inesperado, como se nem tivesse noção do impacto. Ela elogia quando sente que você gera uma energia diferente sem esforço."
-  },
-  {
-    id: 45,
-    name: "Expressa Preocupação com o Seu Bem-Estar",
-    definition: "Pergunta se está tudo bem, se você precisa de algo ou mostra preocupação genuína.",
-    group: "interacaoVerbal",
-    whatToDo: "Responda de forma sincera, mas adicione uma provocação leve, tipo 'você sempre cuida tão bem assim?' — cria intimidade e charme.",
-    whatNotToDo: "Não responda apenas com 'tudo certo' — ela está buscando abertura emocional e reciprocidade.",
-    howToMakeHerShowThisSignal: "Demonstre pequenas fragilidades ou cansaços com um leve sorriso. Ela sente o impulso de cuidar quando percebe que pode ser especial pra você."
-  },
-  {
-    id: 46,
-    name: "Deixa Mensagens Sem Terminar Para Continuar a Conversa",
-    definition: "Envia mensagens que convidam uma resposta, criando uma desculpa para prolongar a interação.",
-    group: "comportamentoContextual",
-    whatToDo: "Continue o jogo: deixe um gancho aberto também. Crie um ritmo onde ela sinta que quer sempre voltar.",
-    whatNotToDo: "Não responda de forma fechada ou seca — você quebra o looping que ela construiu.",
-    howToMakeHerShowThisSignal: "Use frases com duplo sentido ou finais ambíguos. Ela sente que tem mais a descobrir — e começa a criar desculpas pra manter o papo vivo."
-  },
-  {
-    id: 47,
-    name: "Encontra Motivos para Se Aproximar",
-    definition: "Tenta estar no mesmo ambiente que você, mesmo sem um motivo claro.",
-    group: "comportamentoContextual",
-    whatToDo: "Note e valide com naturalidade: 'você sempre aparece nos lugares certos, hein?' — ela vai rir e se sentir vista.",
-    whatNotToDo: "Não aja como se fosse coincidência sem importância — ela quer ser notada, mas sem parecer óbvia.",
-    howToMakeHerShowThisSignal: "Faça sua presença ser notável. Quando você se torna uma energia que mexe com o ambiente, ela arranja desculpas pra se aproximar."
-  },
-  {
-    id: 48,
-    name: "Faz Pequenos Gestos de Cuidado",
-    definition: "Traz uma bebida, oferece um lanche ou realiza pequenas gentilezas.",
-    group: "comportamentoContextual",
-    whatToDo: "Retribua com um gesto não verbal: toque leve, olhar profundo ou um elogio emocional — isso transforma o gesto em conexão.",
-    whatNotToDo: "Não aceite de forma mecânica ou sem emoção — você perde a chance de criar reciprocidade emocional.",
-    howToMakeHerShowThisSignal: "Demonstre que você percebe e valoriza gestos sutis nos outros. Ela sente que pode expressar carinho sem medo — e começa a agir assim com você."
-  },
-  {
-    id: 49,
-    name: "Prolonga Momentos de Interação",
-    definition: "Demora um pouco mais ao se despedir ou hesita antes de sair, sugerindo que quer ficar mais tempo com você.",
-    group: "comportamentoContextual",
-    whatToDo: "Não despeça rápido — use esse momento pra dizer algo emocionalmente memorável. Final marcante = memória emocional.",
-    whatNotToDo: "Não cortar com 'ok, então tchau' — você apaga o brilho do momento mais delicado da interação.",
-    howToMakeHerShowThisSignal: "Reduza o ritmo no final e olhe com presença — ela hesita em ir embora quando sente que ainda existe algo não dito."
-  },
-  {
-    id: 50,
-    name: "Cria Desculpas para Conversas Rápidas",
-    definition: "Encontra pequenas razões para iniciar conversas, como pedir opinião sobre algo trivial.",
-    group: "comportamentoContextual",
-    whatToDo: "Brinque com a desculpa: diga algo como 'você só queria ouvir minha voz, né?' — cria humor + tensão emocional.",
-    whatNotToDo: "Não responda com excesso de lógica ou pressa — o que importa aqui não é o conteúdo, mas a intenção oculta.",
-    howToMakeHerShowThisSignal: "Demonstre que você está sempre um pouco difícil de alcançar, mas nunca inacessível. Isso a leva a criar motivos para puxar assunto, mesmo sem saber por quê."
-  }
-  
-,
+  ,
+
+{
+  id: 41,
+  name: "Chama Sua Atenção para Conversas Privadas",
+  definition: "Inicia ou direciona o diálogo para um ambiente mais reservado e pessoal.",
+  group: "interacaoVerbal",
+  whatToDo: "Aproveite o ambiente privado para aumentar o nível de intimidade: conte algo que poucos sabem ou faça uma pergunta emocional.",
+  whatNotToDo: "Não trate a conversa como trivial — ela escolheu te isolar emocionalmente, então não desperdice.",
+  howToMakeHerShowThisSignal: "Demonstre vulnerabilidade de forma sutil, como se confiasse nela mais do que nos outros ao redor. Isso ativa nela o impulso inconsciente de criar um espaço só entre vocês."
+},
+{
+  id: 42,
+  name: "Reformula Perguntas Para Continuar a Interação",
+  definition: "Faz perguntas abertas que incentivam a troca de ideias.",
+  group: "interacaoVerbal",
+  whatToDo: "Dê respostas com histórias e subtexto — ela está buscando mais do que informação, quer emoção.",
+  whatNotToDo: "Não responda de forma lógica e fria — isso mata a fluidez da troca e o interesse emocional.",
+  howToMakeHerShowThisSignal: "Responda como se escondesse um significado por trás das palavras. Ela sente que precisa entender melhor e reformula — puxada pelo mistério emocional."
+},
+{
+  id: 43,
+  name: "Usa Palavras que Indicam Interesse e Envolvimento",
+  definition: "Expressões como 'quero saber mais', 'fale mais sobre isso' ou 'isso é tão interessante'.",
+  group: "interacaoVerbal",
+  whatToDo: "Aprofunde a conversa com detalhes e mistério. Deixe algumas partes em aberto para ela se envolver ainda mais.",
+  whatNotToDo: "Não banalize ou fuja do assunto — ela está te dando permissão para aprofundar a conexão.",
+  howToMakeHerShowThisSignal: "Entregue partes da sua história como se estivesse contando um segredo mal revelado. Isso acende o envolvimento e ativa nela o desejo de continuar ouvindo."
+},
+{
+  id: 44,
+  name: "Dá Feedback Positivo Frequente",
+  definition: "Comenta que algo é engraçado, interessante ou surpreendente para manter a conversa leve.",
+  group: "interacaoVerbal",
+  whatToDo: "Use o feedback dela como alavanca para introduzir um novo lado seu — mais autêntico, mais profundo ou mais ousado.",
+  whatNotToDo: "Não retribua sempre com 'obrigado' ou frases padrão — isso perde a oportunidade de avançar emocionalmente.",
+  howToMakeHerShowThisSignal: "Diga algo com um charme inesperado, como se nem tivesse noção do impacto. Ela elogia quando sente que você gera uma energia diferente sem esforço."
+},
+{
+  id: 45,
+  name: "Expressa Preocupação com o Seu Bem-Estar",
+  definition: "Pergunta se está tudo bem, se você precisa de algo ou mostra preocupação genuína.",
+  group: "interacaoVerbal",
+  whatToDo: "Responda de forma sincera, mas adicione uma provocação leve, tipo 'você sempre cuida tão bem assim?' — cria intimidade e charme.",
+  whatNotToDo: "Não responda apenas com 'tudo certo' — ela está buscando abertura emocional e reciprocidade.",
+  howToMakeHerShowThisSignal: "Demonstre pequenas fragilidades ou cansaços com um leve sorriso. Ela sente o impulso de cuidar quando percebe que pode ser especial pra você."
+},
+{
+  id: 46,
+  name: "Deixa Mensagens Sem Terminar Para Continuar a Conversa",
+  definition: "Envia mensagens que convidam uma resposta, criando uma desculpa para prolongar a interação.",
+  group: "comportamentoContextual",
+  whatToDo: "Continue o jogo: deixe um gancho aberto também. Crie um ritmo onde ela sinta que quer sempre voltar.",
+  whatNotToDo: "Não responda de forma fechada ou seca — você quebra o looping que ela construiu.",
+  howToMakeHerShowThisSignal: "Use frases com duplo sentido ou finais ambíguos. Ela sente que tem mais a descobrir — e começa a criar desculpas pra manter o papo vivo."
+},
+{
+  id: 47,
+  name: "Encontra Motivos para Se Aproximar",
+  definition: "Tenta estar no mesmo ambiente que você, mesmo sem um motivo claro.",
+  group: "comportamentoContextual",
+  whatToDo: "Note e valide com naturalidade: 'você sempre aparece nos lugares certos, hein?' — ela vai rir e se sentir vista.",
+  whatNotToDo: "Não aja como se fosse coincidência sem importância — ela quer ser notada, mas sem parecer óbvia.",
+  howToMakeHerShowThisSignal: "Faça sua presença ser notável. Quando você se torna uma energia que mexe com o ambiente, ela arranja desculpas pra se aproximar."
+},
+{
+  id: 48,
+  name: "Faz Pequenos Gestos de Cuidado",
+  definition: "Traz uma bebida, oferece um lanche ou realiza pequenas gentilezas.",
+  group: "comportamentoContextual",
+  whatToDo: "Retribua com um gesto não verbal: toque leve, olhar profundo ou um elogio emocional — isso transforma o gesto em conexão.",
+  whatNotToDo: "Não aceite de forma mecânica ou sem emoção — você perde a chance de criar reciprocidade emocional.",
+  howToMakeHerShowThisSignal: "Demonstre que você percebe e valoriza gestos sutis nos outros. Ela sente que pode expressar carinho sem medo — e começa a agir assim com você."
+},
+{
+  id: 49,
+  name: "Prolonga Momentos de Interação",
+  definition: "Demora um pouco mais ao se despedir ou hesita antes de sair, sugerindo que quer ficar mais tempo com você.",
+  group: "comportamentoContextual",
+  whatToDo: "Não despeça rápido — use esse momento pra dizer algo emocionalmente memorável. Final marcante = memória emocional.",
+  whatNotToDo: "Não cortar com 'ok, então tchau' — você apaga o brilho do momento mais delicado da interação.",
+  howToMakeHerShowThisSignal: "Reduza o ritmo no final e olhe com presença — ela hesita em ir embora quando sente que ainda existe algo não dito."
+},
+{
+  id: 50,
+  name: "Cria Desculpas para Conversas Rápidas",
+  definition: "Encontra pequenas razões para iniciar conversas, como pedir opinião sobre algo trivial.",
+  group: "comportamentoContextual",
+  whatToDo: "Brinque com a desculpa: diga algo como 'você só queria ouvir minha voz, né?' — cria humor + tensão emocional.",
+  whatNotToDo: "Não responda com excesso de lógica ou pressa — o que importa aqui não é o conteúdo, mas a intenção oculta.",
+  howToMakeHerShowThisSignal: "Demonstre que você está sempre um pouco difícil de alcançar, mas nunca inacessível. Isso a leva a criar motivos para puxar assunto, mesmo sem saber por quê."
+}
+
+  ,
 {
   id: 51,
   name: "Olha para Você Durante Conversas em Grupo",
@@ -783,7 +783,7 @@ const signals = [{
   whatToDo: "Diga 'qualquer dia tipo... amanhã?'. Jogue o plano na cara dela com charme e ousadia — isso mostra liderança.",
   whatNotToDo: "Não apenas diga 'vamos sim' e mude de assunto — você perde o timing emocional e o gesto morre.",
   howToMakeHerShowThisSignal: "Fale de situações hipotéticas com leveza e subtexto, como 'se eu fosse te levar num lugar diferente...'. Ela completa com sugestões camufladas — e revela desejo em forma de plano."
-} 
+}
 
 ];
 
@@ -791,20 +791,22 @@ const signals = [{
 let currentQuestionIndex = 0;
 let userSelections = [];
 let groupScores = {
-    linguagemCorporal: 0,
-    expressoesFaciais: 0,
-    interacaoVerbal: 0,
-    comportamentoContextual: 0
+  linguagemCorporal: 0,
+  expressoesFaciais: 0,
+  interacaoVerbal: 0,
+  comportamentoContextual: 0
 };
 
 // Inicializar o quiz
 document.addEventListener('DOMContentLoaded', function () {
-  document.querySelector('.start-sales-page').onclick = function () {
-      startSalesRedirect();
-  };
-
   document.querySelector('.start-quiz').onclick = function () {
-      startQuiz();
+    startQuiz();
+  };
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelector('.start-sales-page').onclick = function () {
+    startSalesRedirect();
   };
 });
 
@@ -816,14 +818,14 @@ const nextButton = document.getElementById("next-button");
 const backButton = document.getElementById("back-button");
 
 function startQuiz() {
-    console.log("Iniciando o quiz...");
-    showLoading();
-    welcomeContainer.style.display = 'none';
-    quizContainer.style.display = 'block';
-    setTimeout(() => {
-        hideLoading();
-        renderQuestion();
-    }, 9000);
+  console.log("Iniciando o quiz...");
+  showLoading();
+  welcomeContainer.style.display = 'none';
+  quizContainer.style.display = 'block';
+  setTimeout(() => {
+    hideLoading();
+    renderQuestion();
+  }, 9000);
 }
 
 function startSalesRedirect() {
@@ -831,178 +833,178 @@ function startSalesRedirect() {
   showLoading();
   welcomeContainer.style.display = 'none';
   setTimeout(() => {
-      hideLoading();
-      window.location.href = "salesPage.html";
+    hideLoading();
+    window.location.href = "salesPage.html";
   }, 4000);
 }
 
 function showLoading() {
-    const loadingContainer = document.getElementById('loading-container');
-    loadingContainer.style.display = 'flex';
+  const loadingContainer = document.getElementById('loading-container');
+  loadingContainer.style.display = 'flex';
 }
 
 function hideLoading() {
-    const loadingContainer = document.getElementById('loading-container');
-    loadingContainer.style.display = 'none';
+  const loadingContainer = document.getElementById('loading-container');
+  loadingContainer.style.display = 'none';
 }
 
 // Função para renderizar a pergunta
 function renderQuestion() {
-    console.log("Renderizando pergunta...");
-    const questionContainer = document.getElementById('question-container');
-    const questionText = document.getElementById('question-text');
-    const buttonsContainer = document.querySelector('.buttons-container');
+  console.log("Renderizando pergunta...");
+  const questionContainer = document.getElementById('question-container');
+  const questionText = document.getElementById('question-text');
+  const buttonsContainer = document.querySelector('.buttons-container');
 
-    questionContainer.style.display = 'block';
-    resultContainer.style.display = 'none';
+  questionContainer.style.display = 'block';
+  resultContainer.style.display = 'none';
 
-    const questionData = questions[currentQuestionIndex];
-    questionText.textContent = questionData.question;
-    buttonsContainer.innerHTML = '';
+  const questionData = questions[currentQuestionIndex];
+  questionText.textContent = questionData.question;
+  buttonsContainer.innerHTML = '';
 
-    // Adicionar as opções
-    questionData.options.forEach((option, index) => {
-        const button = document.createElement("button");
-        button.textContent = option.text;
-        button.classList.add("option-button");
-        button.onclick = () => toggleSelection(index, button);
-        if (isSelected(index)) {
-            button.classList.add("selected");
-        }
-        buttonsContainer.appendChild(button);
-        console.log(`Adicionada opção: ${option.text}`);
-    });
-
-    // Exibir ou ocultar o botão "Voltar"
-    backButton.style.display = currentQuestionIndex > 0 ? "block" : "none";
-
-    // Configurar o botão "Próximo" ou "Ver Resultado"
-    if (currentQuestionIndex === questions.length - 1) {
-        nextButton.textContent = "Ver Resultado"; // Alterar texto para "Ver Resultado"
-        nextButton.onclick = function() {
-            showLoading();
-            setTimeout(() => {
-                hideLoading();
-                showResults(); // Mostrar os resultados quando for a última pergunta
-            }, 2000);
-        };
-    } else {
-        nextButton.textContent = "Próximo"; // Restaurar o texto "Próximo"
-        nextButton.style.display = "block";
-        nextButton.onclick = moveToNextQuestion;
+  // Adicionar as opções
+  questionData.options.forEach((option, index) => {
+    const button = document.createElement("button");
+    button.textContent = option.text;
+    button.classList.add("option-button");
+    button.onclick = () => toggleSelection(index, button);
+    if (isSelected(index)) {
+      button.classList.add("selected");
     }
+    buttonsContainer.appendChild(button);
+    console.log(`Adicionada opção: ${option.text}`);
+  });
 
-    backButton.onclick = moveToPreviousQuestion;
+  // Exibir ou ocultar o botão "Voltar"
+  backButton.style.display = currentQuestionIndex > 0 ? "block" : "none";
+
+  // Configurar o botão "Próximo" ou "Ver Resultado"
+  if (currentQuestionIndex === questions.length - 1) {
+    nextButton.textContent = "Ver Resultado"; // Alterar texto para "Ver Resultado"
+    nextButton.onclick = function () {
+      showLoading();
+      setTimeout(() => {
+        hideLoading();
+        showResults(); // Mostrar os resultados quando for a última pergunta
+      }, 2000);
+    };
+  } else {
+    nextButton.textContent = "Próximo"; // Restaurar o texto "Próximo"
+    nextButton.style.display = "block";
+    nextButton.onclick = moveToNextQuestion;
+  }
+
+  backButton.onclick = moveToPreviousQuestion;
 }
 
 function calculateAttractionScore(selectedSignalIds) {
-    const attractionSignalsHit = highAttractionSignals.filter(id => selectedSignalIds.has(id));
-    const attractionScore = (attractionSignalsHit.length / highAttractionSignals.length) * 100;
-    return attractionScore.toFixed(2);
+  const attractionSignalsHit = highAttractionSignals.filter(id => selectedSignalIds.has(id));
+  const attractionScore = (attractionSignalsHit.length / highAttractionSignals.length) * 100;
+  return attractionScore.toFixed(2);
 }
 
 function getAttractionMessage(score) {
-    if (score >= 80) return "Ela sente uma forte atração por você. Muitos dos sinais indicam desejo e interesse real.";
-    if (score >= 60) return "Existe uma boa chance de atração, com vários sinais de interesse claros.";
-    if (score >= 40) return "A atração parece moderada. Alguns sinais existem, mas podem ser sutis.";
-    return "Poucos sinais de atração foram detectados. Pode ser apenas simpatia ou amizade.";
+  if (score >= 80) return "Ela sente uma forte atração por você. Muitos dos sinais indicam desejo e interesse real.";
+  if (score >= 60) return "Existe uma boa chance de atração, com vários sinais de interesse claros.";
+  if (score >= 40) return "A atração parece moderada. Alguns sinais existem, mas podem ser sutis.";
+  return "Poucos sinais de atração foram detectados. Pode ser apenas simpatia ou amizade.";
 }
 
 
 
 // Função para alternar a seleção das opções
 function toggleSelection(optionIndex, buttonElement) {
-    const selected = userSelections[currentQuestionIndex] || [];
+  const selected = userSelections[currentQuestionIndex] || [];
 
-    if (selected.includes(optionIndex)) {
-        userSelections[currentQuestionIndex] = selected.filter(i => i !== optionIndex);
-        buttonElement.classList.remove("selected");
-    } else {
-        selected.push(optionIndex);
-        userSelections[currentQuestionIndex] = selected;
-        buttonElement.classList.add("selected");
-    }
-    console.log(`Selecionou opção: ${optionIndex}`);
+  if (selected.includes(optionIndex)) {
+    userSelections[currentQuestionIndex] = selected.filter(i => i !== optionIndex);
+    buttonElement.classList.remove("selected");
+  } else {
+    selected.push(optionIndex);
+    userSelections[currentQuestionIndex] = selected;
+    buttonElement.classList.add("selected");
+  }
+  console.log(`Selecionou opção: ${optionIndex}`);
 }
 
 // Verificar se a opção já foi selecionada anteriormente
 function isSelected(optionIndex) {
-    const selected = userSelections[currentQuestionIndex] || [];
-    return selected.includes(optionIndex);
+  const selected = userSelections[currentQuestionIndex] || [];
+  return selected.includes(optionIndex);
 }
 
 // Função para ir para a próxima pergunta
 function moveToNextQuestion() {
-    if (userSelections[currentQuestionIndex] && userSelections[currentQuestionIndex].length > 0) {
-        currentQuestionIndex++;
-        renderQuestion();
-    } else {
-        alert("Por favor, selecione pelo menos uma opção para continuar.");
-    }
+  if (userSelections[currentQuestionIndex] && userSelections[currentQuestionIndex].length > 0) {
+    currentQuestionIndex++;
+    renderQuestion();
+  } else {
+    alert("Por favor, selecione pelo menos uma opção para continuar.");
+  }
 }
 
 // Função para ir para a pergunta anterior
 function moveToPreviousQuestion() {
-    if (currentQuestionIndex > 0) {
-        currentQuestionIndex--;
-        renderQuestion();
-    }
+  if (currentQuestionIndex > 0) {
+    currentQuestionIndex--;
+    renderQuestion();
+  }
 }
 
 function showResults() {
-    console.log("Exibindo resultados...");
+  console.log("Exibindo resultados...");
 
-    // Ocultar o quiz e exibir a área de resultados
-    quizContainer.style.display = 'none';
-    resultContainer.style.display = 'block';
-    nextButton.style.display = "none";
+  // Ocultar o quiz e exibir a área de resultados
+  quizContainer.style.display = 'none';
+  resultContainer.style.display = 'block';
+  nextButton.style.display = "none";
 
-    // Inicializar estrutura para armazenar resultados por grupo
-    const groupResults = {
-        linguagemCorporal: [],
-        expressoesFaciais: [],
-        interacaoVerbal: [],
-        comportamentoContextual: []
-    };
+  // Inicializar estrutura para armazenar resultados por grupo
+  const groupResults = {
+    linguagemCorporal: [],
+    expressoesFaciais: [],
+    interacaoVerbal: [],
+    comportamentoContextual: []
+  };
 
-    const selectedSignalIds = new Set();
+  const selectedSignalIds = new Set();
 
-    // Processando seleções do usuário e adicionando sinais observados
-    console.log("Processando seleções do usuário...");
-    userSelections.forEach((selection, index) => {
-        const questionData = questions[index];
-        selection.forEach(optionIndex => {
-            const signals = questionData.options[optionIndex].signals;
-            signals.forEach(signalId => {
-                selectedSignalIds.add(signalId);
-            });
-        });
+  // Processando seleções do usuário e adicionando sinais observados
+  console.log("Processando seleções do usuário...");
+  userSelections.forEach((selection, index) => {
+    const questionData = questions[index];
+    selection.forEach(optionIndex => {
+      const signals = questionData.options[optionIndex].signals;
+      signals.forEach(signalId => {
+        selectedSignalIds.add(signalId);
+      });
+    });
+  });
+
+  // Organizar os sinais nos grupos correspondentes e marcar como observados ou não
+  signals.forEach(signal => {
+    const wasSelected = selectedSignalIds.has(signal.id);
+    groupResults[signal.group].push({
+      id: signal.id,
+      name: signal.name,
+      definition: signal.definition,
+      selected: wasSelected,
+      whatToDo: signal.whatToDo,
+      whatNotToDo: signal.whatNotToDo,
+      howToMakeHerShowThisSignal: signal.howToMakeHerShowThisSignal
     });
 
-    // Organizar os sinais nos grupos correspondentes e marcar como observados ou não
-    signals.forEach(signal => {
-        const wasSelected = selectedSignalIds.has(signal.id);
-        groupResults[signal.group].push({
-          id: signal.id,
-          name: signal.name,
-          definition: signal.definition,
-          selected: wasSelected,
-          whatToDo: signal.whatToDo,
-          whatNotToDo: signal.whatNotToDo,
-          howToMakeHerShowThisSignal: signal.howToMakeHerShowThisSignal
-        });
-        
-    });
+  });
 
-    // Calcular as pontuações dos grupos
-    console.log("Calculando pontuações...");
-    calculateGroupScores(groupResults);
-    const totalScore = calculateFinalScore();
-    const attractionScore = calculateAttractionScore(selectedSignalIds);
+  // Calcular as pontuações dos grupos
+  console.log("Calculando pontuações...");
+  calculateGroupScores(groupResults);
+  const totalScore = calculateFinalScore();
+  const attractionScore = calculateAttractionScore(selectedSignalIds);
 
 
-    // Gerar o HTML dos resultados
-    const resultHTML = `
+  // Gerar o HTML dos resultados
+  const resultHTML = `
         <img src="img/decodeLogo.png" class="decode-logo-result">
         <h2 class="result-title">Resultado</h2>
         ${formatGroupResults("Comunicação Não Verbal –<br> Linguagem Corporal", groupResults.linguagemCorporal, groupScores.linguagemCorporal, "linguagemCorporal")}
@@ -1072,37 +1074,37 @@ function showResults() {
 
     `;
 
-    saveResultsToLocalStorage(groupResults, attractionScore, totalScore);
+  saveResultsToLocalStorage(groupResults, attractionScore, totalScore);
 
-    // Inserir o resultado na div de resultado e exibir
-    resultContainer.innerHTML = resultHTML;
-    console.log("Resultados mostrados.");
+  // Inserir o resultado na div de resultado e exibir
+  resultContainer.innerHTML = resultHTML;
+  console.log("Resultados mostrados.");
 }
 
 function saveResultsToLocalStorage(groupResults, attractionScore, interestScore) {
   const allSignals = [];
 
   Object.keys(groupResults).forEach(group => {
-      groupResults[group].forEach(signal => {
-          allSignals.push({
-              id: signal.id,
-              name: signal.name,
-              definition: signal.definition,
-              selected: signal.selected,
-              whatToDo: signal.whatToDo,
-              whatNotToDo: signal.whatNotToDo,
-              group: group,
-              weight: highAttractionSignals.includes(signal.id) ? 3 : 1,
-              howToMakeHerShowThisSignal: signal.howToMakeHerShowThisSignal || "",
-              
-          });
+    groupResults[group].forEach(signal => {
+      allSignals.push({
+        id: signal.id,
+        name: signal.name,
+        definition: signal.definition,
+        selected: signal.selected,
+        whatToDo: signal.whatToDo,
+        whatNotToDo: signal.whatNotToDo,
+        group: group,
+        weight: highAttractionSignals.includes(signal.id) ? 3 : 1,
+        howToMakeHerShowThisSignal: signal.howToMakeHerShowThisSignal || "",
+
       });
+    });
   });
 
   const resultData = {
-      signals: allSignals,
-      attractionScore: parseFloat(attractionScore),
-      interestScore: parseFloat(interestScore)
+    signals: allSignals,
+    attractionScore: parseFloat(attractionScore),
+    interestScore: parseFloat(interestScore)
   };
 
   localStorage.setItem("decodeResults", JSON.stringify(resultData));
@@ -1113,28 +1115,28 @@ function saveResultsToLocalStorage(groupResults, attractionScore, interestScore)
 
 
 function calculateGroupScores(groupResults) {
-    console.log("Iniciando cálculo das pontuações por grupo...");
+  console.log("Iniciando cálculo das pontuações por grupo...");
 
-    groupScores = {
-        linguagemCorporal: 0,
-        expressoesFaciais: 0,
-        interacaoVerbal: 0,
-        comportamentoContextual: 0
-    };
+  groupScores = {
+    linguagemCorporal: 0,
+    expressoesFaciais: 0,
+    interacaoVerbal: 0,
+    comportamentoContextual: 0
+  };
 
-    // Contar quantos sinais foram selecionados em cada grupo para calcular a porcentagem
-    Object.keys(groupResults).forEach(group => {
-        const selectedCount = groupResults[group].filter(signal => signal.selected).length;
-        const totalCount = groupResults[group].length;
-        groupScores[group] = totalCount > 0 ? ((selectedCount / totalCount) * 100).toFixed(2) : 0;
-    });
+  // Contar quantos sinais foram selecionados em cada grupo para calcular a porcentagem
+  Object.keys(groupResults).forEach(group => {
+    const selectedCount = groupResults[group].filter(signal => signal.selected).length;
+    const totalCount = groupResults[group].length;
+    groupScores[group] = totalCount > 0 ? ((selectedCount / totalCount) * 100).toFixed(2) : 0;
+  });
 
-    console.log("Pontuações por grupo (em porcentagem):", groupScores);
+  console.log("Pontuações por grupo (em porcentagem):", groupScores);
 }
 
 function calculateFinalScore() {
-    const total = (parseFloat(groupScores.linguagemCorporal) + parseFloat(groupScores.expressoesFaciais) + parseFloat(groupScores.interacaoVerbal) + parseFloat(groupScores.comportamentoContextual)) / 4;
-    return total.toFixed(2);
+  const total = (parseFloat(groupScores.linguagemCorporal) + parseFloat(groupScores.expressoesFaciais) + parseFloat(groupScores.interacaoVerbal) + parseFloat(groupScores.comportamentoContextual)) / 4;
+  return total.toFixed(2);
 }
 
 function formatGroupResults(groupName, signals, score, groupKey) {
@@ -1165,8 +1167,8 @@ function formatGroupResults(groupName, signals, score, groupKey) {
 
 
 function getFinalMessage(score) {
-    if (score >= 80) return "Ela está realmente interessada em você.";
-    if (score >= 60) return "Ela pode estar interessada, mas é importante observar mais sinais.";
-    if (score >= 40) return "Parece que o interesse é moderado, talvez em situações específicas.";
-    return "Ela não está demonstrando muitos sinais de interesse.";
+  if (score >= 80) return "Ela está realmente interessada em você.";
+  if (score >= 60) return "Ela pode estar interessada, mas é importante observar mais sinais.";
+  if (score >= 40) return "Parece que o interesse é moderado, talvez em situações específicas.";
+  return "Ela não está demonstrando muitos sinais de interesse.";
 }
